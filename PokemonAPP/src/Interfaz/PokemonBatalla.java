@@ -10,12 +10,12 @@ package Interfaz;
  * @author alumno
  */
 public class PokemonBatalla extends javax.swing.JFrame {
-    public String nombre;
     
     public PokemonBatalla() {
         initComponents();
         this.setLocationRelativeTo(null);  //esto para poner la imagen en el medio
     }
+    public static String nombre = "";
     
     
 
@@ -103,6 +103,12 @@ public class PokemonBatalla extends javax.swing.JFrame {
     masculino M = new masculino();
     M.setVisible(true);
     this.setVisible(false);
+    
+    nombre = txtNombre.getText();
+    
+    masculino pok = new masculino();
+    
+    
     
     }//GEN-LAST:event_jButton3ActionPerformed
 

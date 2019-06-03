@@ -17,8 +17,8 @@ public class masculino extends javax.swing.JFrame {
     public masculino() {
         initComponents();
         this.setLocationRelativeTo(null);
-        PokemonBatalla pok = new PokemonBatalla();
-        jVaron.setText(pok.nombre);
+        PokemonBatalla pk = new PokemonBatalla();
+        jVaron.setText(pk.nombre);
     }
     
     /**
@@ -33,8 +33,8 @@ public class masculino extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jButton6 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
-        jLabel5 = new javax.swing.JLabel();
         jVaron = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
@@ -59,12 +59,12 @@ public class masculino extends javax.swing.JFrame {
         jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Wartortle.png"))); // NOI18N
         getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 280, -1, -1));
 
+        jVaron.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        getContentPane().add(jVaron, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 220, 220, 22));
+
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel5.setText("Seleccione su Pokémon");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(137, 250, -1, 23));
-
-        jVaron.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        getContentPane().add(jVaron, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 220, 220, 22));
 
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/1891762-005charmeleon.png"))); // NOI18N
         jButton2.addActionListener(new java.awt.event.ActionListener() {

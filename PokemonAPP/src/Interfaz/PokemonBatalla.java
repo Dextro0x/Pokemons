@@ -17,6 +17,8 @@ public class PokemonBatalla extends javax.swing.JFrame {
     }
     public static String nombre = "";
     
+
+    
     
 
     /**
@@ -100,7 +102,7 @@ public class PokemonBatalla extends javax.swing.JFrame {
     }//GEN-LAST:event_txtNombreActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        nombre = txtNombre.getText();
+    nombre = txtNombre.getText();
         masculino M = new masculino();
         M.setVisible(true);
         this.setVisible(false);

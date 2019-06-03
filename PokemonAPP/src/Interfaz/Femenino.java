@@ -16,6 +16,9 @@ public class Femenino extends javax.swing.JFrame {
      */
     public Femenino() {
         initComponents();
+        this.setLocationRelativeTo(null);
+        PokemonBatalla pk = new PokemonBatalla();
+        jMujer.setText(pk.nombre);
     }
 
     /**
@@ -34,6 +37,8 @@ public class Femenino extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
+        jMujer = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
         Jimagen = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -80,6 +85,13 @@ public class Femenino extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 570, -1, -1));
+
+        jMujer.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        getContentPane().add(jMujer, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 220, 220, 22));
+
+        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel3.setText("BIENVENIDO:");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 220, 110, 20));
 
         Jimagen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/B4bUF1vCIAARgoR.jpg"))); // NOI18N
         getContentPane().add(Jimagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 410, 600));
@@ -149,6 +161,8 @@ public class Femenino extends javax.swing.JFrame {
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jMujer;
     // End of variables declaration//GEN-END:variables
 }

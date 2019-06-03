@@ -2,19 +2,19 @@
 package Interfaz;
 
 
-import Atxy2k.CustomTextField.RestrictedTextField;
+import Atxy2k.CustomTextField.RestrictedTextField; //Se descargar la libreria Atxy2k
 
 public class PokemonBatalla extends javax.swing.JFrame {
     
     public PokemonBatalla() {
         initComponents();
         this.setLocationRelativeTo(null);  //esto para poner la imagen en el medio     
-        RestrictedTextField r = new RestrictedTextField(txtNombre);
+        RestrictedTextField r = new RestrictedTextField(txtNombre);      // Se instancia un objeto para la restriccion
         r.setLimit(10);
         
         
     }
-    public static String nombre = "";
+    public static String nombre = "";  //Se 
     
 
        

@@ -100,13 +100,14 @@ public class PokemonBatalla extends javax.swing.JFrame {
     }//GEN-LAST:event_txtNombreActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-    masculino M = new masculino();
-    M.setVisible(true);
-    this.setVisible(false);
+        nombre = txtNombre.getText();
+        masculino M = new masculino();
+        M.setVisible(true);
+        this.setVisible(false);
     
-    nombre = txtNombre.getText();
     
-    masculino pok = new masculino();
+    
+    
     
     
     
@@ -121,7 +122,7 @@ public class PokemonBatalla extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-    this.dispose();
+    System.exit(0);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**

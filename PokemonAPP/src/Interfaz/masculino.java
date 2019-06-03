@@ -17,6 +17,8 @@ public class masculino extends javax.swing.JFrame {
     public masculino() {
         initComponents();
         this.setLocationRelativeTo(null);
+        PokemonBatalla pok = new PokemonBatalla();
+        jVaron.setText(pok.nombre);
     }
     
     /**
@@ -36,6 +38,7 @@ public class masculino extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -59,7 +62,9 @@ public class masculino extends javax.swing.JFrame {
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel5.setText("Seleccione su Pokémon");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(137, 250, -1, 23));
-        getContentPane().add(jVaron, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 220, 95, 22));
+
+        jVaron.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        getContentPane().add(jVaron, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 220, 220, 22));
 
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/1891762-005charmeleon.png"))); // NOI18N
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -85,6 +90,10 @@ public class masculino extends javax.swing.JFrame {
         });
         getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 570, -1, -1));
 
+        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel3.setText("BIENVENIDO:");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 220, 110, 20));
+
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/B4bUF1vCIAARgoR.jpg"))); // NOI18N
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 410, 620));
 
@@ -100,14 +109,14 @@ public class masculino extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-    PokemonBatalla pk = new PokemonBatalla();
-    pk.setVisible(true);
-    this.setVisible(false);
+        PokemonBatalla pk = new PokemonBatalla();
+        pk.setVisible(true);
+        this.setVisible(false);
     
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-    this.dispose();
+    System.exit(0);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
@@ -153,6 +162,7 @@ public class masculino extends javax.swing.JFrame {
     private javax.swing.JButton jButton6;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jVaron;
     // End of variables declaration//GEN-END:variables

@@ -17,8 +17,8 @@ public class masculino extends javax.swing.JFrame {
     public masculino() {
         initComponents();
         this.setLocationRelativeTo(null);
-        PokemonBatalla pk = new PokemonBatalla();
-        jVaron.setText(pk.nombre);
+        PokemonBatalla pok = new PokemonBatalla();
+        jVaron.setText(pok.nombre);
     }
     
     /**

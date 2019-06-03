@@ -1,22 +1,23 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Interfaz;
 
-/**
- *
- * @author alumno
- */
+
+import Atxy2k.CustomTextField.RestrictedTextField;
+
 public class PokemonBatalla extends javax.swing.JFrame {
     
     public PokemonBatalla() {
         initComponents();
-        this.setLocationRelativeTo(null);  //esto para poner la imagen en el medio
+        this.setLocationRelativeTo(null);  //esto para poner la imagen en el medio     
+        RestrictedTextField r = new RestrictedTextField(txtNombre);
+        r.setLimit(10);
+        
+        
     }
     public static String nombre = "";
     
+
+       
 
     
     

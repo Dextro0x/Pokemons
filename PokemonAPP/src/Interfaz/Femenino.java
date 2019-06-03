@@ -68,7 +68,7 @@ public class Femenino extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(117, 424, -1, -1));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 430, -1, -1));
 
         jButton3.setText("VOLVER");
         jButton3.addActionListener(new java.awt.event.ActionListener() {

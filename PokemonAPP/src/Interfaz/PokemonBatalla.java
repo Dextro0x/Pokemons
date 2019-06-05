@@ -106,21 +106,15 @@ public class PokemonBatalla extends javax.swing.JFrame {
         nombre = txtNombre.getText();
         masculino M = new masculino();
         M.setVisible(true);
-        this.setVisible(false);
-    
-    
-    
-    
-    
-    
+        this.setVisible(false);    
     
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-    nombre = txtNombre.getText();
-    Femenino F = new Femenino();
-    F.setVisible(true);
-    this.setVisible(false);
+        nombre = txtNombre.getText();
+        Femenino F = new Femenino();
+        F.setVisible(true);
+        this.setVisible(false);
     
     
     }//GEN-LAST:event_jButton4ActionPerformed

@@ -5,10 +5,9 @@
  */
 package pelea;
 
-/**
- *
- * @author alumno
- */
+import Interfaz.Bullbasaur;
+import Interfaz.PokemonBatalla;
+
 public class masculino1 extends javax.swing.JFrame {
 
     /**
@@ -16,6 +15,12 @@ public class masculino1 extends javax.swing.JFrame {
      */
     public masculino1() {
         initComponents();
+        this.setLocationRelativeTo(null);
+        Bullbasaur b1 = new Bullbasaur();
+        txtbul.setText(b1.name);
+        PokemonBatalla pok = new PokemonBatalla();
+        jm1.setText(pok.nombre);
+        
     }
 
     /**
@@ -30,11 +35,15 @@ public class masculino1 extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
         btnatacar = new javax.swing.JToggleButton();
         btnpocion = new javax.swing.JToggleButton();
+        txtbul = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jm1 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -43,13 +52,10 @@ public class masculino1 extends javax.swing.JFrame {
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(535, 28, -1, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/moltres.gif"))); // NOI18N
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(316, 28, 213, 88));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 30, 213, 88));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/descarga.jpg"))); // NOI18N
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 28, -1, 226));
-
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/001.png"))); // NOI18N
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(111, 135, -1, -1));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, -1));
 
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
@@ -63,8 +69,38 @@ public class masculino1 extends javax.swing.JFrame {
         btnpocion.setText("USAR POCION");
         getContentPane().add(btnpocion, new org.netbeans.lib.awtextra.AbsoluteConstraints(115, 292, -1, -1));
 
+        txtbul.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        txtbul.setText("da");
+        getContentPane().add(txtbul, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 230, 80, 20));
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/bulba_1.gif"))); // NOI18N
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 110, 150, 110));
+
+        jm1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jm1.setText("jLabel4");
+        getContentPane().add(jm1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 230, 100, 20));
+
+        jButton1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jButton1.setText("VOLVER");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 500, -1, -1));
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/pokemon-lets-go-pikachu-and-lets-go-eevee-veridian-forest.jpg"))); // NOI18N
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 700, 530));
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        Bullbasaur b2 = new Bullbasaur();
+        b2.setVisible(true);
+        this.setVisible(false);
+               
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -104,11 +140,15 @@ public class masculino1 extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JToggleButton btnatacar;
     private javax.swing.JToggleButton btnpocion;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JLabel jm1;
+    private javax.swing.JLabel txtbul;
     // End of variables declaration//GEN-END:variables
 }

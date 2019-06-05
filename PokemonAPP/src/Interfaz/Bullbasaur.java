@@ -6,7 +6,6 @@
 package Interfaz;
 
 import pelea.masculino1;
-import javax.swing.JOptionPane;
 
 /**
  *

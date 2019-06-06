@@ -5,10 +5,10 @@
  */
 package Interfaz;
 
-import Interfaz.Bullbasaur;
-import Interfaz.PokemonBatalla;
-import Interfaz.charmeleon;
-import Interfaz.wartortle;
+import Interfaz.pokemonsele.Bullbasaur;
+import Interfaz.pokemonsele.Charmander;
+import Interfaz.pokemonsele.Wartortle;
+import pelea.Warpelea;
 
 /**
  *
@@ -22,8 +22,9 @@ public class masculino extends javax.swing.JFrame {
     public masculino() {
         initComponents();
         this.setLocationRelativeTo(null);
-        PokemonBatalla pok = new PokemonBatalla();
-        jVaron.setText(pok.nombre);
+        PokemonBatalla pk = new PokemonBatalla();
+        jVaron.setText(pk.nombre);
+        
     }
     
     /**
@@ -53,21 +54,21 @@ public class masculino extends javax.swing.JFrame {
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/descarga.jpg"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 10, -1, -1));
 
-        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/001.png"))); // NOI18N
+        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/bulba_1.gif"))); // NOI18N
         jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton6ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 280, -1, -1));
+        getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 280, 130, 120));
 
-        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Wartortle.png"))); // NOI18N
+        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Wartortle..gif"))); // NOI18N
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton5ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 280, -1, -1));
+        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 280, 130, 120));
 
         jVaron.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         getContentPane().add(jVaron, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 220, 220, 22));
@@ -76,13 +77,13 @@ public class masculino extends javax.swing.JFrame {
         jLabel5.setText("Seleccione su Pokémon");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(137, 250, -1, 23));
 
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/1891762-005charmeleon.png"))); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/charmander.gif"))); // NOI18N
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 420, -1, -1));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 430, 130, 130));
 
         jButton1.setText("SALIR");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -105,21 +106,22 @@ public class masculino extends javax.swing.JFrame {
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 220, 110, 20));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/B4bUF1vCIAARgoR.jpg"))); // NOI18N
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 410, 620));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 410, 600));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        Bullbasaur Bul = new Bullbasaur();
-        Bul.setVisible(true);
+        Bullbasaur b = new Bullbasaur();
+        b.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        charmeleon cha = new charmeleon();
-        cha.setVisible(true);
+        Charmander ca = new Charmander();
+        ca.setVisible(true);
         this.setVisible(false);
+        
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
@@ -134,8 +136,8 @@ public class masculino extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        wartortle war = new wartortle();
-        war.setVisible(true);
+        Wartortle wa = new Wartortle();
+        wa.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_jButton5ActionPerformed
 

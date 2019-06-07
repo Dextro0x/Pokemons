@@ -16,51 +16,16 @@ public class pokemon {
     String tipo;
     int vida;
 
-    public pokemon(String nombre, int vidamax, int vidamin, String tipo, int vida) {
+    public pokemon(String nombre, int vidamax, int vidamin, String tipo) {
         this.nombre = nombre;
         this.vidamax = vidamax;
         this.vidamin = vidamin;
         this.tipo = tipo;
-        this.vida = vida;
+        this.vida = 100;
         
     }
 
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public int getVidamax() {
-        return vidamax;
-    }
-
-    public void setVidamax(int vidamax) {
-        this.vidamax = vidamax;
-    }
-
-    public int getVidamin() {
-        return vidamin;
-    }
-
-    public void setVidamin(int vidamin) {
-        this.vidamin = vidamin;
-    }
-
-    public String getTipo() {
-        return tipo;
-    }
-
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
-    }
-    String MostrarEstado() {
-        String estado = this.nombre + " / " + this.vida 
-                + " HP";
-        return estado;
-    }
+   
     
     String Atacar(pokemon contrincante) {
         String resultado = "";

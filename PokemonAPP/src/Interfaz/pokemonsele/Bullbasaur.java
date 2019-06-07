@@ -33,7 +33,11 @@ public class Bullbasaur extends javax.swing.JFrame {
         motebul.setEnabled(false);
     }
     public void habsiguiente(){
-        if(btsi.isSelected() || btno.isSelected()){
+        if(btsi.isSelected()){
+            jButton4.setEnabled(true);       
+        
+        }
+        if(btno.isSelected()){
             jButton4.setEnabled(true);
         }
     }
@@ -56,6 +60,7 @@ public class Bullbasaur extends javax.swing.JFrame {
         jButton5 = new javax.swing.JButton();
         btsi = new javax.swing.JRadioButton();
         btno = new javax.swing.JRadioButton();
+        jprint = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -117,6 +122,9 @@ public class Bullbasaur extends javax.swing.JFrame {
         });
         getContentPane().add(btno, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 110, 50, 20));
 
+        jprint.setForeground(java.awt.Color.red);
+        getContentPane().add(jprint, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 80, 80, 20));
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -132,12 +140,30 @@ public class Bullbasaur extends javax.swing.JFrame {
     private void btnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnoActionPerformed
         Deshabilitar();
         habsiguiente();
+        if (motebul.getText().isEmpty()){
+            jprint.setText("");
+        }
+        
     }//GEN-LAST:event_btnoActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         Bullpelea bp = new Bullpelea();
-        bp.setVisible(true);
-        this.setVisible(false);
+        
+        if(btsi.isSelected() && motebul.getText().isEmpty()){
+            bp.setVisible(false);
+            jprint.setText("*requerido");
+        }
+        if(btsi.isSelected() && !motebul.getText().isEmpty()){
+            bp.setVisible(true);
+        }
+        if(btno.isSelected()){
+            bp.setVisible(true);
+            
+        }
+        
+            
+        
+        
         
     }//GEN-LAST:event_jButton4ActionPerformed
 
@@ -195,6 +221,7 @@ public class Bullbasaur extends javax.swing.JFrame {
     private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jprint;
     private javax.swing.JTextField motebul;
     // End of variables declaration//GEN-END:variables
 }

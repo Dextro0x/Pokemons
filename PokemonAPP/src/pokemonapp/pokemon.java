@@ -14,12 +14,14 @@ public class pokemon {
     int vidamax;
     int vidamin;
     String tipo;
+    int vida;
 
-    public pokemon(String nombre, int vidamax, int vidamin, String tipo) {
+    public pokemon(String nombre, int vidamax, int vidamin, String tipo, int vida) {
         this.nombre = nombre;
         this.vidamax = vidamax;
         this.vidamin = vidamin;
         this.tipo = tipo;
+        this.vida = vida;
         
     }
 
@@ -54,9 +56,40 @@ public class pokemon {
     public void setTipo(String tipo) {
         this.tipo = tipo;
     }
+    String MostrarEstado() {
+        String estado = this.nombre + " / " + this.vida 
+                + " HP";
+        return estado;
+    }
     
+    String Atacar(pokemon contrincante) {
+        String resultado = "";
+        
+        int ataque = (int) (Math.random() * 10 + 10);        
+        int critico = (int) (Math.random() * 100);
+        
+        if (critico <= 10) {
+            ataque = (int) (ataque * 2.5);
+        }
+        
+        contrincante.vida = contrincante.vida - ataque;
+        
+        if (contrincante.vida < 0) {
+            contrincante.vida = 0;
+        }
+        
+        if (critico <= 10) {
+            resultado = contrincante.nombre 
+                    + " recibió un ataque crítico de " + ataque;
+        }
+        else {
+            resultado = contrincante.nombre 
+                    + " recibió un ataque de " + ataque;
+        }
+        
+        return resultado;
     
-    
+    }
           
     
 }

@@ -5,6 +5,7 @@
  */
 package Interfaz.pokemonsele;
 
+import Atxy2k.CustomTextField.RestrictedTextField;
 import Interfaz.Femenino;
 import Interfaz.masculino;
 import pelea.Warpelea;
@@ -23,12 +24,14 @@ public class WartortleF extends javax.swing.JFrame {
         initComponents();
         this.setLocationRelativeTo(null);
         Deshabilitar();
+        RestrictedTextField r = new RestrictedTextField(motewarF);
+        r.setLimit(10);
     }
     public void Habiliitar(){
-        jTextField1.setEnabled(true);
+        motewarF.setEnabled(true);
     }
     public void Deshabilitar(){
-        jTextField1.setEnabled(false);
+        motewarF.setEnabled(false);
     }
 
     /**
@@ -44,7 +47,7 @@ public class WartortleF extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        motewarF = new javax.swing.JTextField();
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
         jRadioButton3 = new javax.swing.JRadioButton();
@@ -68,7 +71,7 @@ public class WartortleF extends javax.swing.JFrame {
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Wartortle..gif"))); // NOI18N
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 40, 100, 100));
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 70, 90, -1));
+        getContentPane().add(motewarF, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 70, 90, -1));
 
         jButton4.setText("SIGUIENTE");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -177,7 +180,7 @@ public class WartortleF extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JRadioButton jRadioButton3;
     private javax.swing.JRadioButton jRadioButton4;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField motewarF;
     private javax.swing.ButtonGroup mygroup;
     // End of variables declaration//GEN-END:variables
 }

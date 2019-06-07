@@ -5,9 +5,8 @@
  */
 package Interfaz.pokemonsele;
 
+import Atxy2k.CustomTextField.RestrictedTextField;
 import Interfaz.Femenino;
-import Interfaz.masculino;
-import pelea.Bullpelea;
 import pelea.BullpeleaF;
 
 /**
@@ -23,12 +22,14 @@ public class BullbasaurF extends javax.swing.JFrame {
         initComponents();
         this.setLocationRelativeTo(null);
         Deshabilitar();
+        RestrictedTextField r = new RestrictedTextField(motebulF);
+        r.setLimit(10);
     }
     public void Habilitar(){
-        jTextField1.setEnabled(true);
+        motebulF.setEnabled(true);
     }
     public void Deshabilitar(){
-        jTextField1.setEnabled(false);
+        motebulF.setEnabled(false);
     }
 
     /**
@@ -44,7 +45,7 @@ public class BullbasaurF extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        motebulF = new javax.swing.JTextField();
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
         jRadioButton1 = new javax.swing.JRadioButton();
@@ -68,7 +69,7 @@ public class BullbasaurF extends javax.swing.JFrame {
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/bulba_1.gif"))); // NOI18N
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 50, 150, 120));
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 80, 90, -1));
+        getContentPane().add(motebulF, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 80, 90, -1));
 
         jButton4.setText("SIGUIENTE");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -178,6 +179,6 @@ public class BullbasaurF extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JRadioButton jRadioButton1;
     private javax.swing.JRadioButton jRadioButton2;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField motebulF;
     // End of variables declaration//GEN-END:variables
 }

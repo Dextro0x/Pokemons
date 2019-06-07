@@ -5,9 +5,8 @@
  */
 package Interfaz.pokemonsele;
 
+import Atxy2k.CustomTextField.RestrictedTextField;
 import Interfaz.Femenino;
-import Interfaz.masculino;
-import pelea.Charpelea;
 import pelea.CharpeleaF;
 
 /**
@@ -23,13 +22,22 @@ public class CharmanderF extends javax.swing.JFrame {
         initComponents();
         this.setLocationRelativeTo(null);
         Deshabilitar();
+        jButton4.setEnabled(false);
+        RestrictedTextField r = new RestrictedTextField(motecharF);
+        r.setLimit(10);
     }
     public void Habilitar(){
-        jTchar.setEnabled(true);
+        motecharF.setEnabled(true);
     }
     public void Deshabilitar(){
-        jTchar.setEnabled(false);
+        motecharF.setEnabled(false);
     }   
+    public void habsiguiente(){
+        if(!jRadioButton1.isSelected() && jRadioButton2.isSelected() ){
+            jButton4.setEnabled(true);
+        
+        }
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -43,7 +51,7 @@ public class CharmanderF extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
-        jTchar = new javax.swing.JTextField();
+        motecharF = new javax.swing.JTextField();
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
         jRadioButton1 = new javax.swing.JRadioButton();
@@ -67,7 +75,7 @@ public class CharmanderF extends javax.swing.JFrame {
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/charmander.gif"))); // NOI18N
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 50, 180, 130));
-        getContentPane().add(jTchar, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 80, 80, -1));
+        getContentPane().add(motecharF, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 80, 80, -1));
 
         jButton4.setText("SIGUIENTE");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -112,10 +120,12 @@ public class CharmanderF extends javax.swing.JFrame {
 
     private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
         Habilitar();
+        habsiguiente();
     }//GEN-LAST:event_jRadioButton1ActionPerformed
 
     private void jRadioButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton2ActionPerformed
         Deshabilitar();
+        habsiguiente();
     }//GEN-LAST:event_jRadioButton2ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
@@ -177,6 +187,6 @@ public class CharmanderF extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JRadioButton jRadioButton1;
     private javax.swing.JRadioButton jRadioButton2;
-    private javax.swing.JTextField jTchar;
+    private javax.swing.JTextField motecharF;
     // End of variables declaration//GEN-END:variables
 }

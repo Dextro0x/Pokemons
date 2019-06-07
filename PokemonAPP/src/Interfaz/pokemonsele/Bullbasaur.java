@@ -5,6 +5,7 @@
  */
 package Interfaz.pokemonsele;
 
+import Atxy2k.CustomTextField.RestrictedTextField;
 import Interfaz.masculino;
 import pelea.Bullpelea;
 
@@ -21,12 +22,20 @@ public class Bullbasaur extends javax.swing.JFrame {
         initComponents();
         this.setLocationRelativeTo(null);
         Deshabilitar();
+        RestrictedTextField r = new RestrictedTextField(motebul);
+        r.setLimit(10);
+        jButton4.setEnabled(false);
     }
     public void Habilitar(){
-        jTextField1.setEnabled(true);
+        motebul.setEnabled(true);
     }
     public void Deshabilitar(){
-        jTextField1.setEnabled(false);
+        motebul.setEnabled(false);
+    }
+    public void habsiguiente(){
+        if(btsi.isSelected() || btno.isSelected()){
+            jButton4.setEnabled(true);
+        }
     }
 
     /**
@@ -42,11 +51,11 @@ public class Bullbasaur extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        motebul = new javax.swing.JTextField();
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
-        jRadioButton1 = new javax.swing.JRadioButton();
-        jRadioButton2 = new javax.swing.JRadioButton();
+        btsi = new javax.swing.JRadioButton();
+        btno = new javax.swing.JRadioButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -66,7 +75,13 @@ public class Bullbasaur extends javax.swing.JFrame {
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/bulba_1.gif"))); // NOI18N
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 50, 150, 120));
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 80, 90, -1));
+
+        motebul.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                motebulActionPerformed(evt);
+            }
+        });
+        getContentPane().add(motebul, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 80, 90, -1));
 
         jButton4.setText("SIGUIENTE");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -84,23 +99,23 @@ public class Bullbasaur extends javax.swing.JFrame {
         });
         getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 190, -1, -1));
 
-        buttonGroup1.add(jRadioButton1);
-        jRadioButton1.setText("SI");
-        jRadioButton1.addActionListener(new java.awt.event.ActionListener() {
+        buttonGroup1.add(btsi);
+        btsi.setText("SI");
+        btsi.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton1ActionPerformed(evt);
+                btsiActionPerformed(evt);
             }
         });
-        getContentPane().add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 80, 50, 20));
+        getContentPane().add(btsi, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 80, 50, 20));
 
-        buttonGroup1.add(jRadioButton2);
-        jRadioButton2.setText("NO");
-        jRadioButton2.addActionListener(new java.awt.event.ActionListener() {
+        buttonGroup1.add(btno);
+        btno.setText("NO");
+        btno.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton2ActionPerformed(evt);
+                btnoActionPerformed(evt);
             }
         });
-        getContentPane().add(jRadioButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 110, 50, 20));
+        getContentPane().add(btno, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 110, 50, 20));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -109,13 +124,15 @@ public class Bullbasaur extends javax.swing.JFrame {
         System.exit(0);
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
+    private void btsiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btsiActionPerformed
         Habilitar();
-    }//GEN-LAST:event_jRadioButton1ActionPerformed
+        habsiguiente();
+    }//GEN-LAST:event_btsiActionPerformed
 
-    private void jRadioButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton2ActionPerformed
+    private void btnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnoActionPerformed
         Deshabilitar();
-    }//GEN-LAST:event_jRadioButton2ActionPerformed
+        habsiguiente();
+    }//GEN-LAST:event_btnoActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         Bullpelea bp = new Bullpelea();
@@ -129,6 +146,10 @@ public class Bullbasaur extends javax.swing.JFrame {
         m.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void motebulActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_motebulActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_motebulActionPerformed
 
     /**
      * @param args the command line arguments
@@ -166,14 +187,14 @@ public class Bullbasaur extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JRadioButton btno;
+    private javax.swing.JRadioButton btsi;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JRadioButton jRadioButton2;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField motebul;
     // End of variables declaration//GEN-END:variables
 }

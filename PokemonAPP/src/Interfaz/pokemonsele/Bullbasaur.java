@@ -88,21 +88,21 @@ public class Bullbasaur extends javax.swing.JFrame {
         });
         getContentPane().add(motebul, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 80, 90, -1));
 
-        jButton4.setText("SIGUIENTE");
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icons8-flecha-filled-50 (1).png"))); // NOI18N
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 190, -1, -1));
+        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 190, 50, 30));
 
-        jButton5.setText("VOLVER");
+        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icons8-volver-32.png"))); // NOI18N
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton5ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 190, -1, -1));
+        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 190, 50, 30));
 
         buttonGroup1.add(btsi);
         btsi.setText("SI");
@@ -155,9 +155,11 @@ public class Bullbasaur extends javax.swing.JFrame {
         }
         if(btsi.isSelected() && !motebul.getText().isEmpty()){
             bp.setVisible(true);
+            this.setVisible(false);
         }
         if(btno.isSelected()){
             bp.setVisible(true);
+            this.setVisible(false);
             
         }
         

@@ -20,6 +20,8 @@ public class WarpeleaF extends javax.swing.JFrame {
     public WarpeleaF() {
         initComponents();
         this.setLocationRelativeTo(null);
+        PokemonBatalla po = new PokemonBatalla();
+        nomen.setText(po.nombre);
     }
 
     /**
@@ -42,6 +44,7 @@ public class WarpeleaF extends javax.swing.JFrame {
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
+        nomen = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -49,10 +52,10 @@ public class WarpeleaF extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/entrenadora (3).gif"))); // NOI18N
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, 0, 220, 290));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 40, 220, 290));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Wartortle..gif"))); // NOI18N
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 150, 150, 120));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 170, 150, 120));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/racuaza.gif"))); // NOI18N
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 40, 210, 200));
@@ -62,7 +65,7 @@ public class WarpeleaF extends javax.swing.JFrame {
 
         jScrollPane1.setViewportView(jTextPane1);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 340, 670, 210));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 350, 670, 210));
 
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
         jButton1.setText("X");
@@ -74,10 +77,10 @@ public class WarpeleaF extends javax.swing.JFrame {
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 0, -1, 30));
 
         jButton2.setText("ATACAR");
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 300, -1, -1));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 320, -1, -1));
 
         jButton3.setText("USAR POCIMA");
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 300, -1, -1));
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 320, -1, -1));
 
         jButton4.setText("VOLVER");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -94,6 +97,10 @@ public class WarpeleaF extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 570, -1, -1));
+
+        nomen.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        nomen.setForeground(java.awt.Color.orange);
+        getContentPane().add(nomen, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 20, 100, 20));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fondo de batalla.jpg"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 720, 600));
@@ -168,5 +175,6 @@ public class WarpeleaF extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextPane jTextPane1;
+    private javax.swing.JLabel nomen;
     // End of variables declaration//GEN-END:variables
 }

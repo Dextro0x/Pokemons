@@ -20,6 +20,8 @@ public class BullpeleaF extends javax.swing.JFrame {
     public BullpeleaF() {
         initComponents();
         this.setLocationRelativeTo(null);
+        PokemonBatalla po = new PokemonBatalla();
+        nomen.setText(po.nombre);
     }
 
     /**
@@ -31,8 +33,8 @@ public class BullpeleaF extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -42,17 +44,19 @@ public class BullpeleaF extends javax.swing.JFrame {
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
+        nomen = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/entrenadora (3).gif"))); // NOI18N
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 10, 200, 280));
-
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/bulba_1.gif"))); // NOI18N
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 130, 150, 120));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 140, 150, 120));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/entrenadora (3).gif"))); // NOI18N
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, 210, 280));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/contrincante.gif"))); // NOI18N
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 30, 180, 200));
@@ -62,7 +66,7 @@ public class BullpeleaF extends javax.swing.JFrame {
 
         jScrollPane1.setViewportView(jTextPane1);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 330, 680, 210));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 340, 680, 210));
 
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
         jButton1.setText("X");
@@ -74,7 +78,7 @@ public class BullpeleaF extends javax.swing.JFrame {
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 0, -1, 30));
 
         jButton2.setText("ATACAR");
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, -1, -1));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 310, -1, -1));
 
         jButton3.setText("USAR POSIMA");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -82,7 +86,7 @@ public class BullpeleaF extends javax.swing.JFrame {
                 jButton3ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 300, -1, -1));
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 310, -1, -1));
 
         jButton4.setText("RENDIRSE");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -100,8 +104,15 @@ public class BullpeleaF extends javax.swing.JFrame {
         });
         getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 560, -1, -1));
 
+        nomen.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        nomen.setForeground(java.awt.Color.orange);
+        getContentPane().add(nomen, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 10, 100, 20));
+
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fondo de batalla.jpg"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 740, 590));
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/entrenadora (3).gif"))); // NOI18N
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 40, 210, 280));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -174,8 +185,10 @@ public class BullpeleaF extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextPane jTextPane1;
+    private javax.swing.JLabel nomen;
     // End of variables declaration//GEN-END:variables
 
     private BullbasaurF BullbasaurF() {

@@ -116,7 +116,10 @@ public class Bullpelea extends javax.swing.JFrame {
         jScrollPane2.setViewportView(jTextArea1);
 
         getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 290, 670, 210));
-        getContentPane().add(nomen, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 20, 100, 20));
+
+        nomen.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        nomen.setForeground(java.awt.Color.orange);
+        getContentPane().add(nomen, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 20, 90, 20));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fondo de batalla.jpg"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 710, 540));

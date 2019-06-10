@@ -20,6 +20,8 @@ public class Charpelea extends javax.swing.JFrame {
     public Charpelea() {
         initComponents();
         this.setLocationRelativeTo(null);
+        PokemonBatalla po = new PokemonBatalla();
+        nomen.setText(po.nombre);
     }
 
     /**
@@ -41,7 +43,10 @@ public class Charpelea extends javax.swing.JFrame {
         jButton3 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
+        nomen = new javax.swing.JLabel();
+        jButton7 = new javax.swing.JButton();
+        jButton8 = new javax.swing.JButton();
+        jButton9 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -90,10 +95,20 @@ public class Charpelea extends javax.swing.JFrame {
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 530, 80, -1));
 
         jButton4.setText("ATACAR");
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 270, -1, -1));
+        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 280, -1, -1));
 
-        jButton5.setText("USAR POSIMA");
-        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 270, -1, -1));
+        nomen.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        nomen.setForeground(java.awt.Color.orange);
+        getContentPane().add(nomen, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, 100, 20));
+
+        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/pocion (1) (1).gif"))); // NOI18N
+        getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 280, 30, 30));
+
+        jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/pocion (1) (1).gif"))); // NOI18N
+        getContentPane().add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 280, 30, 30));
+
+        jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/pocion (1) (1).gif"))); // NOI18N
+        getContentPane().add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 280, 30, 30));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fondo de batalla.jpg"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 710, 570));
@@ -161,7 +176,9 @@ public class Charpelea extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -169,5 +186,6 @@ public class Charpelea extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextPane jTextPane1;
+    private javax.swing.JLabel nomen;
     // End of variables declaration//GEN-END:variables
 }

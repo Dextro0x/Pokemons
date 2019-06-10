@@ -20,6 +20,8 @@ public class Warpelea extends javax.swing.JFrame {
     public Warpelea() {
         initComponents();
         this.setLocationRelativeTo(null);
+        PokemonBatalla po = new PokemonBatalla();
+        nomen.setText(po.nombre);
     }
 
     /**
@@ -32,14 +34,19 @@ public class Warpelea extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextPane1 = new javax.swing.JTextPane();
         jButton1 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        nomen = new javax.swing.JLabel();
+        jButton4 = new javax.swing.JButton();
+        jButton7 = new javax.swing.JButton();
+        jButton8 = new javax.swing.JButton();
+        jButton9 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -47,20 +54,20 @@ public class Warpelea extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/entrenador.gif.gif"))); // NOI18N
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, 150, 180));
-
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Wartortle..gif"))); // NOI18N
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 130, 170, 130));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, 150, 180));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/racuaza.gif"))); // NOI18N
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 40, 210, 210));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Wartortle..gif"))); // NOI18N
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 120, 170, 130));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/contrincante.gif"))); // NOI18N
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 30, 180, 200));
 
         jScrollPane1.setViewportView(jTextPane1);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 280, 670, 210));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 290, 670, 210));
 
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
         jButton1.setText("X");
@@ -86,6 +93,22 @@ public class Warpelea extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 510, 80, -1));
+
+        nomen.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        nomen.setForeground(java.awt.Color.orange);
+        getContentPane().add(nomen, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 30, 100, 20));
+
+        jButton4.setText("ATACAR");
+        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 260, -1, -1));
+
+        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/pocion (1) (1).gif"))); // NOI18N
+        getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 260, 30, 30));
+
+        jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/pocion (1) (1).gif"))); // NOI18N
+        getContentPane().add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 260, 30, 30));
+
+        jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/pocion (1) (1).gif"))); // NOI18N
+        getContentPane().add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 260, 30, 30));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fondo de batalla.jpg"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 710, 540));
@@ -152,6 +175,10 @@ public class Warpelea extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -159,5 +186,6 @@ public class Warpelea extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextPane jTextPane1;
+    private javax.swing.JLabel nomen;
     // End of variables declaration//GEN-END:variables
 }

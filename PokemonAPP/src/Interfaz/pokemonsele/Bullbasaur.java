@@ -41,6 +41,7 @@ public class Bullbasaur extends javax.swing.JFrame {
             jButton4.setEnabled(true);
         }
     }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -156,6 +157,7 @@ public class Bullbasaur extends javax.swing.JFrame {
         if(btsi.isSelected() && !motebul.getText().isEmpty()){
             bp.setVisible(true);
             this.setVisible(false);
+            
         }
         if(btno.isSelected()){
             bp.setVisible(true);

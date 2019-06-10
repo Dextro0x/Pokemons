@@ -7,27 +7,26 @@ package pelea;
 
 import Interfaz.PokemonBatalla;
 import Interfaz.pokemonsele.Bullbasaur;
-import pokemonapp.pokemon;
+
 
 /**
  *
  * @author ASUS
  */
 public class Bullpelea extends javax.swing.JFrame {
-    pokemon mio = new pokemon(null, WIDTH, WIDTH, null);
-    pokemon rival = new pokemon(null, WIDTH, WIDTH, null);
     
-
-    /**
-     * Creates new form Bullpelea
-     */
+            
     public Bullpelea() {
         initComponents();
         this.setLocationRelativeTo(null);
+        PokemonBatalla pok = new PokemonBatalla();
+        nomen.setText(pok.nombre);
+        
+        
         
         
     }
-
+ 
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -57,6 +56,7 @@ public class Bullpelea extends javax.swing.JFrame {
         jButton5 = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
+        nomen = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -101,6 +101,11 @@ public class Bullpelea extends javax.swing.JFrame {
         getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 510, -1, -1));
 
         jButton4.setText("ATACAR");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 250, -1, -1));
 
         jButton5.setText("USAR POCIMA");
@@ -111,6 +116,7 @@ public class Bullpelea extends javax.swing.JFrame {
         jScrollPane2.setViewportView(jTextArea1);
 
         getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 290, 670, 210));
+        getContentPane().add(nomen, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 20, 100, 20));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fondo de batalla.jpg"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 710, 540));
@@ -134,6 +140,12 @@ public class Bullpelea extends javax.swing.JFrame {
         this.dispose();
         
     }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    
+        
+        
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -183,5 +195,6 @@ public class Bullpelea extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JLabel nomen;
     // End of variables declaration//GEN-END:variables
 }

@@ -8,7 +8,6 @@ package Interfaz;
 import Interfaz.pokemonsele.Bullbasaur;
 import Interfaz.pokemonsele.Charmander;
 import Interfaz.pokemonsele.Wartortle;
-import pelea.Warpelea;
 
 /**
  *

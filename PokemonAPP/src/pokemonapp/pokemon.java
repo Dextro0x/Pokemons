@@ -9,52 +9,33 @@ package pokemonapp;
  *
  * @author alumno
  */
-public class pokemon {
-    String nombre;
-    int vidamax;
-    int vidamin;
-    String tipo;
-    int vida;
+public abstract class pokemon {
+    public String nombre;
+    public int vida;
+    public int nivel;
 
-    public pokemon(String nombre, int vidamax, int vidamin, String tipo) {
+    
+    
+    public pokemon(String nombre) {
         this.nombre = nombre;
-        this.vidamax = vidamax;
-        this.vidamin = vidamin;
-        this.tipo = tipo;
-        this.vida = 100;
+        this.nivel = 5;
+        this.vida = 40 + this.nivel *5 ;
         
+    }
+    
+    String MostrarEstado(){
+        String estado = this.nombre + "/" + this.vida + "HP";
+        return estado;
     }
 
    
+
+
     
-    String Atacar(pokemon contrincante) {
-        String resultado = "";
-        
-        int ataque = (int) (Math.random() * 10 + 10);        
-        int critico = (int) (Math.random() * 100);
-        
-        if (critico <= 10) {
-            ataque = (int) (ataque * 2.5);
-        }
-        
-        contrincante.vida = contrincante.vida - ataque;
-        
-        if (contrincante.vida < 0) {
-            contrincante.vida = 0;
-        }
-        
-        if (critico <= 10) {
-            resultado = contrincante.nombre 
-                    + " recibió un ataque crítico de " + ataque;
-        }
-        else {
-            resultado = contrincante.nombre 
-                    + " recibió un ataque de " + ataque;
-        }
-        
-        return resultado;
+
+
+
+
+
+}   
     
-    }
-          
-    
-}

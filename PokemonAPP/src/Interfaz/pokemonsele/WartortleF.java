@@ -7,8 +7,6 @@ package Interfaz.pokemonsele;
 
 import Atxy2k.CustomTextField.RestrictedTextField;
 import Interfaz.Femenino;
-import Interfaz.masculino;
-import pelea.Warpelea;
 import pelea.WarpeleaF;
 
 /**
@@ -48,10 +46,11 @@ public class WartortleF extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         motewarF = new javax.swing.JTextField();
-        jButton4 = new javax.swing.JButton();
+        jsigu = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
-        jRadioButton3 = new javax.swing.JRadioButton();
-        jRadioButton4 = new javax.swing.JRadioButton();
+        btnsi = new javax.swing.JRadioButton();
+        btno = new javax.swing.JRadioButton();
+        warno = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -71,15 +70,15 @@ public class WartortleF extends javax.swing.JFrame {
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Wartortle..gif"))); // NOI18N
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 40, 100, 100));
-        getContentPane().add(motewarF, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 70, 90, -1));
+        getContentPane().add(motewarF, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 70, 90, -1));
 
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icons8-flecha-filled-50 (1).png"))); // NOI18N
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        jsigu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icons8-flecha-filled-50 (1).png"))); // NOI18N
+        jsigu.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                jsiguActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 190, 50, 30));
+        getContentPane().add(jsigu, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 190, 50, 30));
 
         jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icons8-volver-32.png"))); // NOI18N
         jButton5.addActionListener(new java.awt.event.ActionListener() {
@@ -89,23 +88,26 @@ public class WartortleF extends javax.swing.JFrame {
         });
         getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 190, 50, 30));
 
-        mygroup.add(jRadioButton3);
-        jRadioButton3.setText("SI");
-        jRadioButton3.addActionListener(new java.awt.event.ActionListener() {
+        mygroup.add(btnsi);
+        btnsi.setText("SI");
+        btnsi.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton3ActionPerformed(evt);
+                btnsiActionPerformed(evt);
             }
         });
-        getContentPane().add(jRadioButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 70, -1, -1));
+        getContentPane().add(btnsi, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 70, -1, -1));
 
-        mygroup.add(jRadioButton4);
-        jRadioButton4.setText("NO");
-        jRadioButton4.addActionListener(new java.awt.event.ActionListener() {
+        mygroup.add(btno);
+        btno.setText("NO");
+        btno.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton4ActionPerformed(evt);
+                btnoActionPerformed(evt);
             }
         });
-        getContentPane().add(jRadioButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 100, -1, -1));
+        getContentPane().add(btno, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 100, -1, -1));
+
+        warno.setForeground(java.awt.Color.red);
+        getContentPane().add(warno, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 70, 80, 20));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -114,19 +116,30 @@ public class WartortleF extends javax.swing.JFrame {
         System.exit(0);
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void jRadioButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton3ActionPerformed
+    private void btnsiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnsiActionPerformed
         Habiliitar();
-    }//GEN-LAST:event_jRadioButton3ActionPerformed
+    }//GEN-LAST:event_btnsiActionPerformed
 
-    private void jRadioButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton4ActionPerformed
+    private void btnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnoActionPerformed
         Deshabilitar();
-    }//GEN-LAST:event_jRadioButton4ActionPerformed
+        if(motewarF.getText().isEmpty()){
+            warno.setText("");
+        }
+    }//GEN-LAST:event_btnoActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void jsiguActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jsiguActionPerformed
         WarpeleaF wp = new WarpeleaF();
-        wp.setVisible(true);
-        this.setVisible(false);
-    }//GEN-LAST:event_jButton4ActionPerformed
+        if(btnsi.isSelected() && motewarF.getText().isEmpty()){
+            wp.setVisible(false);
+            warno.setText("requerido");
+        }
+        if(btnsi.isSelected() && !motewarF.getText().isEmpty()){
+            wp.setVisible(true);
+        }
+        if(btno.isSelected()){
+            wp.setVisible(true);
+        }
+    }//GEN-LAST:event_jsiguActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         Femenino f = new Femenino();
@@ -173,14 +186,15 @@ public class WartortleF extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JRadioButton btno;
+    private javax.swing.JRadioButton btnsi;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JRadioButton jRadioButton3;
-    private javax.swing.JRadioButton jRadioButton4;
+    private javax.swing.JButton jsigu;
     private javax.swing.JTextField motewarF;
     private javax.swing.ButtonGroup mygroup;
+    private javax.swing.JLabel warno;
     // End of variables declaration//GEN-END:variables
 }

@@ -7,6 +7,7 @@ package pelea;
 
 import Interfaz.PokemonBatalla;
 import Interfaz.pokemonsele.Bullbasaur;
+import pokemonapp.pokemon;
 
 
 /**
@@ -14,6 +15,7 @@ import Interfaz.pokemonsele.Bullbasaur;
  * @author ASUS
  */
 public class Bullpelea extends javax.swing.JFrame {
+    pokemon mipokemon = new pokemon("Bullbasaur");
     
             
     public Bullpelea() {
@@ -21,6 +23,8 @@ public class Bullpelea extends javax.swing.JFrame {
         this.setLocationRelativeTo(null);
         PokemonBatalla pok = new PokemonBatalla();
         nomen.setText(pok.nombre);
+        jmostrar.setText(mipokemon.Estado());
+        
         
         
         
@@ -59,6 +63,7 @@ public class Bullpelea extends javax.swing.JFrame {
         jButton7 = new javax.swing.JButton();
         jButton8 = new javax.swing.JButton();
         jButton9 = new javax.swing.JButton();
+        jmostrar = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -128,6 +133,7 @@ public class Bullpelea extends javax.swing.JFrame {
 
         jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/pocion (1) (1).gif"))); // NOI18N
         getContentPane().add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 260, 30, 30));
+        getContentPane().add(jmostrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 70, 210, 50));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fondo de batalla.jpg"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 710, 540));
@@ -208,6 +214,7 @@ public class Bullpelea extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JLabel jmostrar;
     private javax.swing.JLabel nomen;
     // End of variables declaration//GEN-END:variables
 }

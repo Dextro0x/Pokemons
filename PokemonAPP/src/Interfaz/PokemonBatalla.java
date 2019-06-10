@@ -5,6 +5,8 @@ package Interfaz;
 import Atxy2k.CustomTextField.RestrictedTextField; //Se descargar la libreria Atxy2k
 
 public class PokemonBatalla extends javax.swing.JFrame {
+
+    
     
     public PokemonBatalla() {
         initComponents();
@@ -13,7 +15,7 @@ public class PokemonBatalla extends javax.swing.JFrame {
         r.setLimit(10);
         jButton3.setEnabled(false);
         jButton4.setEnabled(false);
-
+        
         
         
     }

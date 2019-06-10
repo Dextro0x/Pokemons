@@ -9,24 +9,23 @@ package pokemonapp;
  *
  * @author alumno
  */
-public abstract class pokemon {
-    public String nombre;
-    public int vida;
-    public int nivel;
+public class pokemon{
+    String nombre;
+    int vida;
+    int nivel;
+    int pocion;
 
-    
-    
-    public pokemon(String nombre) {
+    public pokemon(String nombre){
+        this.vida = 40 + this.nivel*5;
         this.nombre = nombre;
         this.nivel = 5;
-        this.vida = 40 + this.nivel *5 ;
         
     }
-    
-    String MostrarEstado(){
-        String estado = this.nombre + "/" + this.vida + "HP";
+    public String Estado(){
+        String estado = this.nombre + " / " + this.vida + " HP";
         return estado;
     }
+    
 
    
 

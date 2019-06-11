@@ -55,41 +55,7 @@ public class pokemon{
         
         return resultado;
     }
-    public String Atacar(String pok){
-     
-        String resultado = "";
-        
-        int ataque = (int)(Math.random()*7 + 5);
-        int critico = (int)(Math.random()*100);
-        int esquivar = (int)(Math.random()*100);
-        
-        if(critico <= 20){
-            ataque = (int)(ataque *3);
-            
-        if(esquivar <= 20){
-            ataque = (int)(ataque*0);
-        }                  
-        }
-        this.vida = this.vida - ataque;
-        if(this.vida <= 0){
-            this.vida = 0;
-        }
-        if(critico <= 20){
-            resultado = this.nombre +
-                    "recibió un ataque crítico de " + ataque;
-        if(esquivar <= 20){
-            resultado = this.nombre + "esquivo el ataque.";
-        }
-        else{
-            resultado = this.nombre + " recibió un ataque de "
-                    + "ataque";
-        }
-        
-        }
-        return resultado;
-    }
 }
-
     
  
     

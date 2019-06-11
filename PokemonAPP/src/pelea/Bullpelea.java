@@ -6,7 +6,6 @@
 package pelea;
 
 import Interfaz.PokemonBatalla;
-import Interfaz.masculino;
 import Interfaz.pokemonsele.Bullbasaur;
 import pokemonapp.pokemon;
 
@@ -29,6 +28,8 @@ public class Bullpelea extends javax.swing.JFrame {
         jmostrar.setText(mipok.Estado());
         
         jblas.setText(rival.Estado());
+        Bullbasaur n = new Bullbasaur();
+        jLabel4.setText(n.Nom);
         
         
           
@@ -78,6 +79,7 @@ public class Bullpelea extends javax.swing.JFrame {
         jButton9 = new javax.swing.JButton();
         jmostrar = new javax.swing.JLabel();
         jblas = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -159,6 +161,9 @@ public class Bullpelea extends javax.swing.JFrame {
         jblas.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         getContentPane().add(jblas, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 30, 150, 30));
 
+        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 190, 140, 70));
+
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fondo de batalla.jpg"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 710, 540));
 
@@ -190,6 +195,8 @@ public class Bullpelea extends javax.swing.JFrame {
         jTextArea1.append(resultado2 + "\n");
         
         jmostrar.setText(mipok.Estado());
+        
+        
         jblas.setText(rival.Estado());
         
         analizar();
@@ -197,10 +204,14 @@ public class Bullpelea extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        int resul = mipok.usarHp(); 
-        jTextArea1.append(mipok.nombre + " ha usado poción, su vida aumenta en " + resul);
-        jButton7.setEnabled(false);
+        String mostrar = "";  
+        mostrar = mipok.nombre + " ha usado pocion, su vida aumenta en " + mipok.usarHp() + "\n";
+        jTextArea1.append(mostrar);
         jmostrar.setText(mipok.Estado());
+        jButton7.setEnabled(false);
+                
+        
+        
     }//GEN-LAST:event_jButton7ActionPerformed
 
     /**
@@ -249,6 +260,7 @@ public class Bullpelea extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTextArea jTextArea1;

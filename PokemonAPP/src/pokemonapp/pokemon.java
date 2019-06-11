@@ -25,8 +25,8 @@ public class pokemon{
     public String Atacar(pokemon contrincante) {
         String resultado = "";
         
-        int ataque = (int)((new Random().nextInt(5))+5);        
-        int critico = (int)(((new Random().nextInt(5))+5)*2);
+        int ataque = (int)(new Random().nextInt(5)+5);        
+        int critico = (int)((new Random().nextInt(5)+5)*2);
         contrincante.vida = contrincante.vida - ataque;
         
         if (contrincante.vida < 0) {

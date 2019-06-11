@@ -215,7 +215,7 @@ public class Bullpelea extends javax.swing.JFrame {
 
     private void pocion1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pocion1ActionPerformed
         String mostrar = "";  
-        mostrar = mipok.nombre + " ha usado pocion, su vida aumenta en " + mipok.usarHp() + "\n";
+        mostrar = mipok.nombre + " ha usado pocion, su vida aumenta en " + mipok + "\n";
         jTextArea1.append(mostrar);
        
         pocion1.setEnabled(false);

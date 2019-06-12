@@ -9,7 +9,7 @@ import Atxy2k.CustomTextField.RestrictedTextField;
 import Interfaz.masculino;
 import javax.swing.JOptionPane;
 import pelea.Bullpelea;
-import pelea.Mote;
+import pelea.Bullmote;
 
 /**
  *
@@ -106,13 +106,12 @@ public class Bullbasaur extends javax.swing.JFrame {
         Bullpelea bp = new Bullpelea();
         masculino m = new  masculino();
         if(btno.isSelected() ){
-            Mote mo = new Mote();
+            Bullmote mo = new Bullmote();
             mo.setVisible(true);
             this.setVisible(false);
             
         }
-        if(btsi.isSelected()){
-            
+        if(btsi.isSelected()){          
             m.setVisible(true);
             this.dispose();
             

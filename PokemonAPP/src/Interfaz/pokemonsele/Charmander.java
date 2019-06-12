@@ -8,6 +8,7 @@ package Interfaz.pokemonsele;
 import Interfaz.masculino;
 import pelea.Bullpelea;
 import pelea.Charpelea;
+import pelea.Bullmote;
 
 /**
  *
@@ -103,12 +104,14 @@ public class Charmander extends javax.swing.JFrame {
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         masculino m = new masculino();
         Charpelea cp = new Charpelea();
-        if(btsi.isSelected()){
-            m.setVisible(true);
-            this.dispose();          
+        if(btno.isSelected() ){
+            Bullmote mo = new Bullmote();
+            mo.setVisible(true);
+            this.setVisible(false);
+            
         }
-        if(btno.isSelected()){
-            cp.setVisible(true);
+        if(btsi.isSelected()){          
+            m.setVisible(true);
             this.dispose();
             
         }

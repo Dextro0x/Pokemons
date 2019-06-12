@@ -10,6 +10,8 @@ import Interfaz.Femenino;
 import Interfaz.masculino;
 import pelea.Bullpelea;
 import pelea.BullpeleaF;
+import pelea.Bullmote;
+import pelea.BullmoteF;
 
 /**
  *
@@ -29,7 +31,7 @@ public class BullbasaurF extends javax.swing.JFrame {
         
                  
     }
-    public String Nom = "";
+   
     
     
     
@@ -105,12 +107,15 @@ public class BullbasaurF extends javax.swing.JFrame {
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         Femenino m = new Femenino();
         BullpeleaF bp = new BullpeleaF();
-        if(btsi.isSelected()){
-            m.setVisible(true);
-            this.dispose();          
+        
+        if(btno.isSelected() ){
+            BullmoteF mo = new BullmoteF();
+            mo.setVisible(true);
+            this.setVisible(false);
+            
         }
-        if(btno.isSelected()){
-            bp.setVisible(true);
+        if(btsi.isSelected()){          
+            m.setVisible(true);
             this.dispose();
             
         }

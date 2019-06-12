@@ -26,6 +26,7 @@ public class Contrincante extends pokemon{
         
         
         
+        
         if(critico <= 20){
             ataque = (int)(ataque * 3);
         if(esquivar <= 20){
@@ -55,7 +56,20 @@ public class Contrincante extends pokemon{
         
         return resultado;
     }
+    @Override
+    public String UsarHP(pokemon este){
+        String hp = "";
+        int usopocion = (int)(Math.random()*100);
+        if(usopocion <= 25){
+            usopocion = este.vida + 15;
+            hp = este.nombre + " ha usado poción, su vida aumenta a " + usopocion + "HP";
+        }
+        
+        return hp;
+        
+    }
 }
+
     
      
         

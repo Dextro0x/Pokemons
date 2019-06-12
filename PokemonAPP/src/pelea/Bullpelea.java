@@ -53,13 +53,18 @@ public class Bullpelea extends javax.swing.JFrame {
                                     + rival.nombre + " ha ganado.");
            
            jButton4.setEnabled(false);
-           
+           pocion1.setEnabled(false);
+           jButton9.setEnabled(false);
+           jButton8.setEnabled(false);
        }
        if(rival.vida == 0){
            jTextArea1.append(rival.nombre + " ha sido derrotado "
                                      + mipok.nombre + " ha ganado.");
            
            jButton4.setEnabled(false);
+           pocion1.setEnabled(false);
+           jButton9.setEnabled(false);
+           jButton8.setEnabled(false);
        }
                                            
    }
@@ -155,9 +160,19 @@ public class Bullpelea extends javax.swing.JFrame {
         getContentPane().add(pocion1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 260, 30, 30));
 
         jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/pocion (1) (1).gif"))); // NOI18N
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 260, 30, 30));
 
         jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/pocion (1) (1).gif"))); // NOI18N
+        jButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton9ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 260, 30, 30));
 
         jmostrar.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -193,12 +208,29 @@ public class Bullpelea extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        double p1 = Math.random();
+        double p2 = Math.random();
         
-        String resultado = mipok.Atacar(rival);
-        jTextArea1.append(resultado + "\n");
-        String resultado2 = rival.Atacar(mipok);
-        jTextArea1.append(resultado2 + "\n");
-
+        
+        
+        if(p1 > p2){
+            String resultado = mipok.Atacar(rival);
+            jTextArea1.append(resultado + "\n");
+        
+            String resultado2 = rival.Atacar(mipok);
+            jTextArea1.append(resultado2 + "\n");
+            
+            rival.UsarHP(rival);
+        }
+        else{
+            String resultado2 = rival.Atacar(mipok);
+            jTextArea1.append(resultado2 + "\n");
+            String resultado = mipok.Atacar(rival);
+            jTextArea1.append(resultado + "\n");
+            rival.UsarHP(rival);
+        
+        }
+        
        
         jmostrar.setText(mipok.Estado());
         jblas.setText(rival.Estado());
@@ -209,13 +241,28 @@ public class Bullpelea extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void pocion1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pocion1ActionPerformed
-        String mostrar = mipok.nombre + " ha usado pocion, su vida aumenta en " + mipok.UsarHP(mipok)+ "\n";
-        jTextArea1.append(mostrar);       
+        String mostrar = mipok.UsarHP(mipok);
+        jTextArea1.append(mostrar + "\n");
+        jmostrar.setText(mipok.Estado());
         pocion1.setEnabled(false);
                 
         
         
     }//GEN-LAST:event_pocion1ActionPerformed
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        String mostrar = mipok.UsarHP(mipok);
+        jTextArea1.append(mostrar + "\n");
+        jmostrar.setText(mipok.Estado());
+        jButton8.setEnabled(false);
+    }//GEN-LAST:event_jButton8ActionPerformed
+
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+        String mostrar = mipok.UsarHP(mipok);
+        jTextArea1.append(mostrar + "\n");
+        jmostrar.setText(mipok.Estado());
+        jButton9.setEnabled(false);
+    }//GEN-LAST:event_jButton9ActionPerformed
 
     /**
      * @param args the command line arguments

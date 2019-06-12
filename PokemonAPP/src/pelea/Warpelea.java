@@ -7,12 +7,17 @@ package pelea;
 
 import Interfaz.PokemonBatalla;
 import Interfaz.pokemonsele.Wartortle;
+import pokemonapp.Contrincante;
+import pokemonapp.pokemon;
 
 /**
  *
  * @author ASUS
  */
 public class Warpelea extends javax.swing.JFrame {
+    pokemon mipok = new pokemon("Wartortre");
+    Contrincante rival = new Contrincante("Sceptile");
+    
 
     /**
      * Creates new form Bullpelea
@@ -37,16 +42,16 @@ public class Warpelea extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTextPane1 = new javax.swing.JTextPane();
         jButton1 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         nomen = new javax.swing.JLabel();
         jButton4 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
+        btpos1 = new javax.swing.JButton();
+        btpos2 = new javax.swing.JButton();
+        btpos3 = new javax.swing.JButton();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -64,10 +69,6 @@ public class Warpelea extends javax.swing.JFrame {
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/contrincante.gif"))); // NOI18N
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 30, 180, 200));
-
-        jScrollPane1.setViewportView(jTextPane1);
-
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 290, 670, 210));
 
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
         jButton1.setText("X");
@@ -99,16 +100,42 @@ public class Warpelea extends javax.swing.JFrame {
         getContentPane().add(nomen, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 30, 100, 20));
 
         jButton4.setText("ATACAR");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 260, -1, -1));
 
-        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/pocion (1) (1).gif"))); // NOI18N
-        getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 260, 30, 30));
+        btpos1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/pocion (1) (1).gif"))); // NOI18N
+        btpos1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btpos1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btpos1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 260, 30, 30));
 
-        jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/pocion (1) (1).gif"))); // NOI18N
-        getContentPane().add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 260, 30, 30));
+        btpos2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/pocion (1) (1).gif"))); // NOI18N
+        btpos2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btpos2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btpos2, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 260, 30, 30));
 
-        jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/pocion (1) (1).gif"))); // NOI18N
-        getContentPane().add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 260, 30, 30));
+        btpos3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/pocion (1) (1).gif"))); // NOI18N
+        btpos3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btpos3ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btpos3, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 260, 30, 30));
+
+        jTextArea1.setColumns(20);
+        jTextArea1.setRows(5);
+        jScrollPane2.setViewportView(jTextArea1);
+
+        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 320, 360, 170));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fondo de batalla.jpg"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 710, 540));
@@ -132,6 +159,51 @@ public class Warpelea extends javax.swing.JFrame {
         wa.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void btpos1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btpos1ActionPerformed
+      String mostrar = mipok.UsarHP(mipok);
+      jTextArea1.append(mostrar + "\n");
+      btpos1.setEnabled(false);
+      
+    }//GEN-LAST:event_btpos1ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        double p1 = Math.random();
+        double p2 = Math.random();
+        
+        
+        if(p1>p2){
+            String resultado = mipok.Atacar(rival);
+            jTextArea1.append(resultado + "\n");
+            
+            String resultado2 = rival.Atacar(mipok);
+            jTextArea1.append(resultado2 + "\n");
+            
+                    
+        }
+        else{
+            String resultado2 = rival.Atacar(mipok);
+            jTextArea1.append(resultado2 + "\n" );
+            
+            String resultado = mipok.Atacar(rival);
+            jTextArea1.append(resultado  + "\n");
+            
+        }
+        
+        
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void btpos2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btpos2ActionPerformed
+        String mostrar = mipok.UsarHP(mipok);
+        jTextArea1.append(mostrar + "\n");
+        btpos2.setEnabled(false);
+    }//GEN-LAST:event_btpos2ActionPerformed
+
+    private void btpos3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btpos3ActionPerformed
+        String mostrar = mipok.UsarHP(mipok);
+        jTextArea1.append(mostrar + "\n");
+        btpos3.setEnabled(false);
+    }//GEN-LAST:event_btpos3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -172,20 +244,20 @@ public class Warpelea extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btpos1;
+    private javax.swing.JButton btpos2;
+    private javax.swing.JButton btpos3;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextPane jTextPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JTextArea jTextArea1;
     private javax.swing.JLabel nomen;
     // End of variables declaration//GEN-END:variables
 }

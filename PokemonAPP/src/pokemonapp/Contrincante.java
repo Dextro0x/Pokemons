@@ -4,35 +4,35 @@
  * and open the template in the editor.
  */
 package pokemonapp;
-public class pokemon{
-    public String nombre;
-    public int vida;
-    public int nivel;
-    public int pocion;
 
-    public pokemon(String nombre){
-        this.nivel = 5;
-        this.vida = 40 + this.nivel*5;
-        this.nombre = nombre;               
-    
+public class Contrincante extends pokemon{
+     
+    public Contrincante(String nombre) {
+        super(nombre);
     }
+    @Override
     public String Estado(){
         String estado = this.nombre + " / " + this.vida + " HP";
         return estado;
     }
+    @Override
     public String Atacar(pokemon contrincante) {
         String resultado = "";
         
-        int ataque = (int)(Math.random()*5 + 5);        
+        int ataque = (int)(Math.random()*5 + 7);        
         int critico = (int)(Math.random()*100);     
         int esquivar = (int)(Math.random()*100);
+        int probataque = (int)(Math.random()*100);
         
         
         
         if(critico <= 20){
-            ataque = (int)(ataque * 2);
-        if(esquivar <= 15){
+            ataque = (int)(ataque * 3);
+        if(esquivar <= 20){
             ataque = (int)(ataque*0);
+        if(probataque <= 75){
+            ataque = (int)(ataque*1);
+        }
         }
         }
         contrincante.vida = contrincante.vida - ataque;
@@ -55,33 +55,10 @@ public class pokemon{
         
         return resultado;
     }
-    public String UsarHP(pokemon este){
-        String hp = "";
-        int HP = this.vida + 15;
-        
-        hp = este.nombre + " ha usado poción, su vida aumenta a " + HP;
-        return hp;
-        
-    }
 }
     
- 
-    
-
+     
         
-       
     
     
-    
 
-
-   
-
-
-    
-
-
-
-
-
-    

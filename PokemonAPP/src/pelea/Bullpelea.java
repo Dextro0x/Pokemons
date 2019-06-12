@@ -7,6 +7,7 @@ package pelea;
 
 import Interfaz.PokemonBatalla;
 import Interfaz.pokemonsele.Bullbasaur;
+import pokemonapp.Contrincante;
 import pokemonapp.pokemon;
 
 
@@ -16,7 +17,8 @@ import pokemonapp.pokemon;
  */
 public class Bullpelea extends javax.swing.JFrame {
     pokemon mipok = new pokemon("Bullbasaur");
-    pokemon rival = new pokemon("Blastoise");
+    
+    Contrincante rival = new Contrincante("Blastoise");
    
                                
     public Bullpelea() {
@@ -28,7 +30,7 @@ public class Bullpelea extends javax.swing.JFrame {
         jmostrar.setText(mipok.Estado());
         
         jblas.setText(rival.Estado());
-        Bullbasaur n = new Bullbasaur();
+        
         
         
         
@@ -133,6 +135,7 @@ public class Bullpelea extends javax.swing.JFrame {
         });
         getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 260, -1, -1));
 
+        jTextArea1.setEditable(false);
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
         jScrollPane2.setViewportView(jTextArea1);
@@ -190,21 +193,13 @@ public class Bullpelea extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        double p1 = Math.random();
-        double p2 = Math.random();
         
-        if(p1 > p2){
-            String resultado = mipok.Atacar(rival);
-            jTextArea1.append(resultado + "\n");
-            String resultado2 = rival.Atacar(mipok);
-            jTextArea1.append(resultado2 + "\n");
-        }
-        else{
-            String resultado2 = rival.Atacar(mipok);
-            jTextArea1.append(resultado2 + "\n");
-            String resultado = mipok.Atacar(rival);
-            jTextArea1.append(resultado + "\n");
-        }
+        String resultado = mipok.Atacar(rival);
+        jTextArea1.append(resultado + "\n");
+        String resultado2 = rival.Atacar(mipok);
+        jTextArea1.append(resultado2 + "\n");
+
+       
         jmostrar.setText(mipok.Estado());
         jblas.setText(rival.Estado());
                 
@@ -214,10 +209,8 @@ public class Bullpelea extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void pocion1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pocion1ActionPerformed
-        String mostrar = "";  
-        mostrar = mipok.nombre + " ha usado pocion, su vida aumenta en " + mipok + "\n";
-        jTextArea1.append(mostrar);
-       
+        String mostrar = mipok.nombre + " ha usado pocion, su vida aumenta en " + mipok.UsarHP(mipok)+ "\n";
+        jTextArea1.append(mostrar);       
         pocion1.setEnabled(false);
                 
         

@@ -58,7 +58,7 @@ public class pokemon{
     public String UsarHP(pokemon este){
         String hp = "";
         int HP = this.vida + 15;
-        este.vida = este.vida = HP;
+        este.vida =  HP;
         hp = este.nombre + " ha usado poción, su vida aumenta a " + HP;
         return hp;
         

@@ -219,15 +219,16 @@ public class Bullpelea extends javax.swing.JFrame {
         
             String resultado2 = rival.Atacar(mipok);
             jTextArea1.append(resultado2 + "\n");
-            
-            rival.UsarHP(rival);
+                       
         }
         else{
             String resultado2 = rival.Atacar(mipok);
             jTextArea1.append(resultado2 + "\n");
             String resultado = mipok.Atacar(rival);
             jTextArea1.append(resultado + "\n");
-            rival.UsarHP(rival);
+            
+            
+            
         
         }
         
@@ -244,8 +245,7 @@ public class Bullpelea extends javax.swing.JFrame {
         String mostrar = mipok.UsarHP(mipok);
         jTextArea1.append(mostrar + "\n");
         jmostrar.setText(mipok.Estado());
-        pocion1.setEnabled(false);
-                
+        pocion1.setEnabled(false);    
         
         
     }//GEN-LAST:event_pocion1ActionPerformed

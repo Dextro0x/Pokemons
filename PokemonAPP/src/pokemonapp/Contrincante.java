@@ -22,10 +22,7 @@ public class Contrincante extends pokemon{
         int ataque = (int)(Math.random()*5 + 7);        
         int critico = (int)(Math.random()*100);     
         int esquivar = (int)(Math.random()*100);
-        int probataque = (int)(Math.random()*100);
-        
-        
-        
+        int probataque = (int)(Math.random()*100);     
         
         if(critico <= 20){
             ataque = (int)(ataque * 3);
@@ -33,6 +30,7 @@ public class Contrincante extends pokemon{
             ataque = (int)(ataque*0);
         if(probataque <= 75){
             ataque = (int)(ataque*1);
+            
         }
         }
         }
@@ -62,8 +60,9 @@ public class Contrincante extends pokemon{
         int usopocion = (int)(Math.random()*100);
         if(usopocion <= 25){
             usopocion = este.vida + 15;
-            hp = este.nombre + " ha usado poción, su vida aumenta a " + usopocion + "HP";
+            
         }
+        hp = este.nombre + " ha usado poción, su vida aumenta a " + usopocion + "HP";
         
         return hp;
         

@@ -103,7 +103,8 @@ public class Bullbasaur extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
         
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-              Bullpelea bp = new Bullpelea();
+        Bullpelea bp = new Bullpelea();
+        masculino m = new  masculino();
         if(btno.isSelected() ){
             Mote mo = new Mote();
             mo.setVisible(true);
@@ -111,7 +112,8 @@ public class Bullbasaur extends javax.swing.JFrame {
             
         }
         if(btsi.isSelected()){
-            bp.setVisible(true);
+            
+            m.setVisible(true);
             this.dispose();
             
         }

@@ -3,21 +3,22 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pelea;
+package pokemonapp;
 
 import Atxy2k.CustomTextField.RestrictedTextField;
 import Interfaz.pokemonsele.Bullbasaur;
+import pelea.Bullpelea;
 
 /**
  *
  * @author ASUS
  */
-public class BullmoteF extends javax.swing.JFrame {
+public class Bullmote extends javax.swing.JFrame {
 
     /**
      * Creates new form Mote
      */
-    public BullmoteF() {
+    public Bullmote() {
         initComponents();
         this.setLocationRelativeTo(null);
         RestrictedTextField r = new RestrictedTextField(txtmote);
@@ -71,13 +72,12 @@ public class BullmoteF extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        BullpeleaF bf = new BullpeleaF();
+        Bullpelea bp = new Bullpelea();
         if(!txtmote.getText().isEmpty()){
-            bf.setVisible(true);
+            bp.setVisible(true);
             this.setVisible(false);
             String nom = txtmote.getText();
-            bf.txtnombref.setText(nom);
-            
+            Bullpelea.txtnombre.setText(nom);
         }
         
         if(txtmote.getText().isEmpty()){
@@ -87,11 +87,11 @@ public class BullmoteF extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        BullpeleaF bf = new BullpeleaF();
-        bf.setVisible(true);
+        Bullpelea bp = new Bullpelea();
+        bp.setVisible(true);
         this.setVisible(false);
         String nom = "Bullbasaur";
-        bf.txtnombref.setText(nom);
+        Bullpelea.txtnombre.setText(nom);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
@@ -111,23 +111,21 @@ public class BullmoteF extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(BullmoteF.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Bullmote.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(BullmoteF.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Bullmote.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(BullmoteF.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Bullmote.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(BullmoteF.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Bullmote.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
-        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new BullmoteF().setVisible(true);
+                new Bullmote().setVisible(true);
             }
         });
     }

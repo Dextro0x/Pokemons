@@ -8,7 +8,8 @@ package Interfaz.pokemonsele;
 import Interfaz.masculino;
 import pelea.Bullpelea;
 import pelea.Charpelea;
-import pelea.Bullmote;
+import pokemonapp.Bullmote;
+import pokemonapp.Charmote;
 
 /**
  *
@@ -105,7 +106,7 @@ public class Charmander extends javax.swing.JFrame {
         masculino m = new masculino();
         Charpelea cp = new Charpelea();
         if(btno.isSelected() ){
-            Bullmote mo = new Bullmote();
+            Charmote mo = new Charmote();
             mo.setVisible(true);
             this.setVisible(false);
             

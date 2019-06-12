@@ -58,16 +58,10 @@ public class Contrincante extends pokemon{
     public String UsarHP(pokemon este){
         String hp = "";
         int usopocion = (int)(Math.random()*100);
-        if(usopocion <= 25){
             usopocion = este.vida + 15;
             
-        }
-        hp = este.nombre + " ha usado poción, su vida aumenta a " + usopocion + "HP";
-        
-        return hp;
-        
-    }
-}
+       
+
 
     
      

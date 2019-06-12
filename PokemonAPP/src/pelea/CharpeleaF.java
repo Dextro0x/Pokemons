@@ -45,7 +45,6 @@ public class CharpeleaF extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         nomen = new javax.swing.JLabel();
         btpos1 = new javax.swing.JButton();
@@ -53,6 +52,8 @@ public class CharpeleaF extends javax.swing.JFrame {
         btpos3 = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
+        jchar = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -60,7 +61,7 @@ public class CharpeleaF extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/charmander.gif"))); // NOI18N
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 160, 200, 120));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 160, 200, 120));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/tumblr_mwsikdoRJX1scncwdo1_500 (1).gif"))); // NOI18N
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 80, 190, 170));
@@ -83,7 +84,7 @@ public class CharpeleaF extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 310, -1, -1));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 300, -1, -1));
 
         jButton4.setText("RENDIRSE");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -91,7 +92,7 @@ public class CharpeleaF extends javax.swing.JFrame {
                 jButton4ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 560, -1, -1));
+        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 560, -1, -1));
 
         jButton5.setText("VOLVER");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
@@ -101,30 +102,33 @@ public class CharpeleaF extends javax.swing.JFrame {
         });
         getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 560, -1, -1));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/entrenadora (3).gif"))); // NOI18N
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, 210, 280));
-
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/entrenadora (3).gif"))); // NOI18N
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, 210, 280));
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 210, 280));
 
         nomen.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         nomen.setForeground(java.awt.Color.orange);
         getContentPane().add(nomen, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 10, 100, 20));
 
         btpos1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/pocion (1) (1).gif"))); // NOI18N
-        getContentPane().add(btpos1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 310, 30, 30));
+        getContentPane().add(btpos1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 300, 30, 30));
 
         btpos2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/pocion (1) (1).gif"))); // NOI18N
-        getContentPane().add(btpos2, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 310, 30, 30));
+        getContentPane().add(btpos2, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 300, 30, 30));
 
         btpos3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/pocion (1) (1).gif"))); // NOI18N
-        getContentPane().add(btpos3, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 310, 30, 30));
+        getContentPane().add(btpos3, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 300, 30, 30));
 
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
         jScrollPane2.setViewportView(jTextArea1);
 
-        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 350, 430, 210));
+        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 330, 690, 220));
+
+        jchar.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        getContentPane().add(jchar, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 110, 100, 30));
+
+        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 40, 140, 30));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fondo de batalla.jpg"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 730, 600));
@@ -199,13 +203,14 @@ public class CharpeleaF extends javax.swing.JFrame {
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTextArea jTextArea1;
+    public javax.swing.JLabel jchar;
     private javax.swing.JLabel nomen;
     // End of variables declaration//GEN-END:variables
 }

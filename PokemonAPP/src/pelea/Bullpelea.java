@@ -34,6 +34,8 @@ public class Bullpelea extends javax.swing.JFrame {
         
         
         
+        
+        
           
         
     }
@@ -89,6 +91,7 @@ public class Bullpelea extends javax.swing.JFrame {
         jmostrar = new javax.swing.JLabel();
         jblas = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
+        txtnombre = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -176,13 +179,16 @@ public class Bullpelea extends javax.swing.JFrame {
         getContentPane().add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 260, 30, 30));
 
         jmostrar.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        getContentPane().add(jmostrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 70, 140, 50));
+        getContentPane().add(jmostrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 80, 70, 40));
 
         jblas.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         getContentPane().add(jblas, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 30, 150, 30));
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 190, 140, 70));
+
+        txtnombre.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        getContentPane().add(txtnombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 80, 90, 40));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fondo de batalla.jpg"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 710, 540));
@@ -318,5 +324,6 @@ public class Bullpelea extends javax.swing.JFrame {
     private javax.swing.JLabel jmostrar;
     private javax.swing.JLabel nomen;
     private javax.swing.JButton pocion1;
+    public static javax.swing.JLabel txtnombre;
     // End of variables declaration//GEN-END:variables
 }

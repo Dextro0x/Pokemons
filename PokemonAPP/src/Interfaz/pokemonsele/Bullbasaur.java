@@ -7,7 +7,9 @@ package Interfaz.pokemonsele;
 
 import Atxy2k.CustomTextField.RestrictedTextField;
 import Interfaz.masculino;
+import javax.swing.JOptionPane;
 import pelea.Bullpelea;
+import pelea.Mote;
 
 /**
  *
@@ -27,7 +29,7 @@ public class Bullbasaur extends javax.swing.JFrame {
         
                  
     }
-    public String Nom = "";
+    
     
     
     
@@ -101,13 +103,14 @@ public class Bullbasaur extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
         
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        masculino m = new masculino();
-        Bullpelea bp = new Bullpelea();
-        if(btsi.isSelected()){
-            m.setVisible(true);
-            this.dispose();          
+              Bullpelea bp = new Bullpelea();
+        if(btno.isSelected() ){
+            Mote mo = new Mote();
+            mo.setVisible(true);
+            this.setVisible(false);
+            
         }
-        if(btno.isSelected()){
+        if(btsi.isSelected()){
             bp.setVisible(true);
             this.dispose();
             
@@ -118,7 +121,13 @@ public class Bullbasaur extends javax.swing.JFrame {
 
     private void btnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnoActionPerformed
         jButton4.setEnabled(true);
-
+        
+        
+        
+        
+            
+        
+        
         
 
     }//GEN-LAST:event_btnoActionPerformed

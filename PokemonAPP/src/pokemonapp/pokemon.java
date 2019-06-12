@@ -17,7 +17,7 @@ public class pokemon{
     
     }
     public String Estado(){
-        String estado = this.nombre + " / " + this.vida + " HP";
+        String estado =" / " + this.vida + " HP";
         return estado;
     }
     public String Atacar(pokemon contrincante) {

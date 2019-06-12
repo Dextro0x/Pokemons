@@ -7,21 +7,26 @@ package pelea;
 
 import Interfaz.PokemonBatalla;
 import Interfaz.pokemonsele.BullbasaurF;
+import pokemonapp.Contrincante;
+import pokemonapp.pokemon;
 
 /**
  *
  * @author ASUS
  */
 public class BullpeleaF extends javax.swing.JFrame {
-
-    /**
-     * Creates new form Bullpelea
-     */
+    pokemon mipok = new pokemon("Bullbasaur");
+    
+    Contrincante rival = new Contrincante("Blastoise");
+    
     public BullpeleaF() {
         initComponents();
         this.setLocationRelativeTo(null);
         PokemonBatalla po = new PokemonBatalla();
         nomen.setText(po.nombre);
+        jmostrar.setText(mipok.Estado());
+        jblas.setText(rival.Estado());
+        
     }
 
     /**
@@ -44,11 +49,14 @@ public class BullpeleaF extends javax.swing.JFrame {
         jButton5 = new javax.swing.JButton();
         nomen = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jButton7 = new javax.swing.JButton();
+        pocion1 = new javax.swing.JButton();
         jButton8 = new javax.swing.JButton();
         jButton9 = new javax.swing.JButton();
         txtnombref = new javax.swing.JLabel();
+        jmostrar = new javax.swing.JLabel();
+        jblas = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -58,10 +66,10 @@ public class BullpeleaF extends javax.swing.JFrame {
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 170, 150, 120));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/contrincante.gif"))); // NOI18N
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 30, 180, 200));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 60, 180, 200));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/tumblr_mwsikdoRJX1scncwdo1_500 (1).gif"))); // NOI18N
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 60, 190, 170));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 80, 190, 170));
 
         jScrollPane1.setViewportView(jTextPane1);
 
@@ -77,6 +85,11 @@ public class BullpeleaF extends javax.swing.JFrame {
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 0, -1, 30));
 
         jButton2.setText("ATACAR");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 310, -1, -1));
 
         jButton4.setText("RENDIRSE");
@@ -102,8 +115,8 @@ public class BullpeleaF extends javax.swing.JFrame {
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/entrenadora (3).gif"))); // NOI18N
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 40, 210, 280));
 
-        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/pocion (1) (1).gif"))); // NOI18N
-        getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 310, 30, 30));
+        pocion1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/pocion (1) (1).gif"))); // NOI18N
+        getContentPane().add(pocion1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 310, 30, 30));
 
         jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/pocion (1) (1).gif"))); // NOI18N
         jButton8.addActionListener(new java.awt.event.ActionListener() {
@@ -117,10 +130,19 @@ public class BullpeleaF extends javax.swing.JFrame {
         getContentPane().add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 310, 30, 30));
 
         txtnombref.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        getContentPane().add(txtnombref, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 120, 110, 30));
+        getContentPane().add(txtnombref, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 120, 90, 30));
+
+        jmostrar.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        getContentPane().add(jmostrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 120, 60, 30));
+
+        jblas.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        getContentPane().add(jblas, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 40, 160, 30));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fondo de batalla.jpg"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 740, 590));
+
+        jLabel8.setText("jLabel8");
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 40, 110, 30));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -145,6 +167,10 @@ public class BullpeleaF extends javax.swing.JFrame {
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton8ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -187,7 +213,6 @@ public class BullpeleaF extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
@@ -195,9 +220,13 @@ public class BullpeleaF extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextPane jTextPane1;
+    private javax.swing.JLabel jblas;
+    private javax.swing.JLabel jmostrar;
     private javax.swing.JLabel nomen;
+    private javax.swing.JButton pocion1;
     public javax.swing.JLabel txtnombref;
     // End of variables declaration//GEN-END:variables
 

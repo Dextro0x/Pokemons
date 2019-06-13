@@ -200,28 +200,26 @@ public class Bullpelea extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        double p1 = Math.random();
-        double p2 = Math.random();
         
-        
-        
-        if(p1 > p2){
-            String resultado = mipok.Atacar(rival);
-            jTextArea1.append(resultado + "\n");
-        
-            String resultado2 = rival.Atacar(mipok);
-            jTextArea1.append(resultado2 + "\n");
-                       
+        String resultado = mipok.Atacar(rival);
+        jTextArea1.append(resultado + "\n");
+        int cont = 0;    
+        int pos = (int)(Math.random()*100);
+            if(cont < 3){
+                if(pos < 25 && rival.vida <= 40){
+                String resultado2 = rival.UsarHP(rival);
+                jTextArea1.append(resultado2 + "\n");
+                cont = cont + 1;
+            }
+            else{
+                 String resultado2 = rival.Atacar(mipok);
+                 jTextArea1.append(resultado2 + "\n");
+            }
+            
         }
         else{
             String resultado2 = rival.Atacar(mipok);
-            jTextArea1.append(resultado2 + "\n");
-            String resultado = mipok.Atacar(rival);
-            jTextArea1.append(resultado + "\n");
-            
-            
-            
-        
+            jTextArea1.append(resultado2 + "\n");               
         }
         
        

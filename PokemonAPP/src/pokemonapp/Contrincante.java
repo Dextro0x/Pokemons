@@ -54,11 +54,21 @@ public class Contrincante extends pokemon{
         
         return resultado;
     }
-    @Override
     public String UsarHP(pokemon este){
         String hp = "";
-        int usopocion = (int)(Math.random()*100);
-            usopocion = este.vida + 15;
+        int HP = this.vida + 15;
+        este.vida =  HP;
+        hp = este.nombre + " ha usado poción, su vida aumenta a " + HP;
+        return hp;
+        
+    }
+}
+
+   
+    
+
+     
+
             
        
 

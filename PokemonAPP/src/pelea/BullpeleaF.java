@@ -17,7 +17,7 @@ import pokemonapp.pokemon;
 public class BullpeleaF extends javax.swing.JFrame {
     pokemon mipok = new pokemon("Bullbasaur");
     
-    Contrincante rival = new Contrincante("Blastoise");
+    Contrincante rival = new Contrincante("Moltres");
     
     public BullpeleaF() {
         initComponents();
@@ -68,8 +68,8 @@ public class BullpeleaF extends javax.swing.JFrame {
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/contrincante.gif"))); // NOI18N
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 60, 180, 200));
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/tumblr_mwsikdoRJX1scncwdo1_500 (1).gif"))); // NOI18N
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 80, 190, 170));
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/moltres.gif"))); // NOI18N
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 80, 210, 170));
 
         jScrollPane1.setViewportView(jTextPane1);
 

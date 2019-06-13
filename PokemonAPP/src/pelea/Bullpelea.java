@@ -18,7 +18,7 @@ import pokemonapp.pokemon;
 public class Bullpelea extends javax.swing.JFrame {
     pokemon mipok = new pokemon("Bullbasaur");
     
-    Contrincante rival = new Contrincante("Blastoise");
+    Contrincante rival = new Contrincante("Moltres");
    
                                
     public Bullpelea() {
@@ -91,10 +91,10 @@ public class Bullpelea extends javax.swing.JFrame {
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 120, 150, 120));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/contrincante.gif"))); // NOI18N
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 30, 180, 200));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 40, 180, 200));
 
-        jlabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/tumblr_mwsikdoRJX1scncwdo1_500 (1).gif"))); // NOI18N
-        getContentPane().add(jlabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 70, 190, 170));
+        jlabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/moltres.gif"))); // NOI18N
+        getContentPane().add(jlabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 70, 210, 170));
 
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
         jButton1.setText("X");

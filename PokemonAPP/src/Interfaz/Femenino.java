@@ -135,12 +135,18 @@ public class Femenino extends javax.swing.JFrame {
         WartortleF wf = new WartortleF();
         wf.setVisible(true);
         this.setVisible(false);
+        AudioClip sound;
+        sound = java.applet.Applet.newAudioClip(getClass().getResource("/CabuImagen/warsound.wav"));
+        sound.play();
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         CharmanderF cf = new CharmanderF();
         cf.setVisible(true);
         this.setVisible(false);
+        AudioClip sound;
+        sound = java.applet.Applet.newAudioClip(getClass().getResource("/CabuImagen/Charsound.wav"));
+        sound.play();
     }//GEN-LAST:event_jButton5ActionPerformed
 
     /**

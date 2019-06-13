@@ -12,6 +12,7 @@ import pelea.Charpelea;
 import pelea.CharpeleaF;
 import Cambiarmotes.Charmote;
 import Cambiarmotes.CharmoteF;
+import java.applet.AudioClip;
 
 /**
  *
@@ -107,6 +108,9 @@ public class CharmanderF extends javax.swing.JFrame {
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         Femenino m = new Femenino();
         CharmoteF ch = new CharmoteF();
+        AudioClip sound;
+        sound = java.applet.Applet.newAudioClip(getClass().getResource("/CabuImagen/pokeballsound.wav"));
+        sound.play();
         if(btsi.isSelected()){
             m.setVisible(true);
             this.setVisible(false);

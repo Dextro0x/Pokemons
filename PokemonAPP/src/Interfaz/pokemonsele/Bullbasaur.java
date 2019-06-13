@@ -9,6 +9,7 @@ import Atxy2k.CustomTextField.RestrictedTextField;
 import Interfaz.masculino;
 import pelea.Bullpelea;
 import Cambiarmotes.Bullmote;
+import java.applet.AudioClip;
 
 /**
  *
@@ -104,6 +105,9 @@ public class Bullbasaur extends javax.swing.JFrame {
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         Bullpelea bp = new Bullpelea();
         masculino m = new  masculino();
+        AudioClip sound;
+        sound = java.applet.Applet.newAudioClip(getClass().getResource("/CabuImagen/pokeballsound.wav"));
+        sound.play();
         if(btno.isSelected() ){
             Bullmote mo = new Bullmote();
             mo.setVisible(true);

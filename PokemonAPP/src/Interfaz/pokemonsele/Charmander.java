@@ -10,6 +10,7 @@ import pelea.Bullpelea;
 import pelea.Charpelea;
 import Cambiarmotes.Bullmote;
 import Cambiarmotes.Charmote;
+import java.applet.AudioClip;
 
 /**
  *
@@ -29,7 +30,7 @@ public class Charmander extends javax.swing.JFrame {
         
                  
     }
-    public String Nom = "";
+   
     
     
     
@@ -104,7 +105,10 @@ public class Charmander extends javax.swing.JFrame {
         
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         masculino m = new masculino();
-        Charpelea cp = new Charpelea();
+       
+        AudioClip sound;
+        sound = java.applet.Applet.newAudioClip(getClass().getResource("/CabuImagen/pokeballsound.wav"));
+        sound.play();
         if(btno.isSelected() ){
             Charmote mo = new Charmote();
             mo.setVisible(true);

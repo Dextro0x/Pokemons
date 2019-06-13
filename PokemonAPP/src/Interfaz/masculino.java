@@ -131,6 +131,9 @@ public class masculino extends javax.swing.JFrame {
         Charmander ca = new Charmander();
         ca.setVisible(true);
         this.setVisible(false);
+        AudioClip sound;
+        sound = java.applet.Applet.newAudioClip(getClass().getResource("/CabuImagen/Charsound.wav"));
+        sound.play();
         
     }//GEN-LAST:event_jButton2ActionPerformed
 
@@ -149,6 +152,9 @@ public class masculino extends javax.swing.JFrame {
         Wartortle wa = new Wartortle();
         wa.setVisible(true);
         this.setVisible(false);
+        AudioClip sound;
+        sound = java.applet.Applet.newAudioClip(getClass().getResource("/CabuImagen/warsound.wav"));
+        sound.play();
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton6MouseClicked

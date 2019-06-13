@@ -10,6 +10,7 @@ import Interfaz.masculino;
 import pelea.Warpelea;
 import pelea.WarpeleaF;
 import Cambiarmotes.WarmoteF;
+import java.applet.AudioClip;
 
 /**
  *
@@ -103,6 +104,9 @@ public class WartortleF extends javax.swing.JFrame {
         
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         Femenino m = new Femenino();
+        AudioClip sound;
+        sound = java.applet.Applet.newAudioClip(getClass().getResource("/CabuImagen/pokeballsound.wav"));
+        sound.play();
         if(btsi.isSelected()){
             m.setVisible(true);
             this.setVisible(false);

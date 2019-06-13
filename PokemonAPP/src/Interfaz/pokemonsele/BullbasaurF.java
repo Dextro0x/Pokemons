@@ -12,6 +12,7 @@ import pelea.Bullpelea;
 import pelea.BullpeleaF;
 import Cambiarmotes.Bullmote;
 import Cambiarmotes.BullmoteF;
+import java.applet.AudioClip;
 
 /**
  *
@@ -107,7 +108,9 @@ public class BullbasaurF extends javax.swing.JFrame {
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         Femenino m = new Femenino();
         BullpeleaF bp = new BullpeleaF();
-        
+        AudioClip sound;
+        sound = java.applet.Applet.newAudioClip(getClass().getResource("/CabuImagen/pokeballsound.wav"));
+        sound.play();
         if(btno.isSelected() ){
             BullmoteF mo = new BullmoteF();
             mo.setVisible(true);

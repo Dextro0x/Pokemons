@@ -10,6 +10,8 @@ import Interfaz.masculino;
 import pelea.Bullpelea;
 import pelea.Charpelea;
 import pelea.CharpeleaF;
+import pokemonapp.Charmote;
+import pokemonapp.CharmoteF;
 
 /**
  *
@@ -104,14 +106,14 @@ public class CharmanderF extends javax.swing.JFrame {
         
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         Femenino m = new Femenino();
-        CharpeleaF cp = new CharpeleaF();
+        CharmoteF ch = new CharmoteF();
         if(btsi.isSelected()){
             m.setVisible(true);
-            this.dispose();          
+            this.setVisible(false);
         }
         if(btno.isSelected()){
-            cp.setVisible(true);
-            this.dispose();
+            ch.setVisible(true);
+            this.setVisible(false);
             
         }
         

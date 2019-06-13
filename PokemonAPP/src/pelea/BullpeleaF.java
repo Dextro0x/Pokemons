@@ -35,7 +35,7 @@ public class BullpeleaF extends javax.swing.JFrame {
            jTextArea1.append(mipok.nombre + " ha sido derrotado "
                                     + rival.nombre + " ha ganado.");
            
-           jButton4.setEnabled(false);
+           jButton2.setEnabled(false);
            pocion1.setEnabled(false);
            jButton9.setEnabled(false);
            jButton8.setEnabled(false);
@@ -44,7 +44,7 @@ public class BullpeleaF extends javax.swing.JFrame {
            jTextArea1.append(rival.nombre + " ha sido derrotado "
                                      + mipok.nombre + " ha ganado.");
            
-           jButton4.setEnabled(false);
+           jButton2.setEnabled(false);
            pocion1.setEnabled(false);
            jButton9.setEnabled(false);
            jButton8.setEnabled(false);
@@ -80,10 +80,10 @@ public class BullpeleaF extends javax.swing.JFrame {
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 170, 150, 120));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/contrincante.gif"))); // NOI18N
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 60, 180, 200));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 110, 180, 200));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/moltres.gif"))); // NOI18N
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 80, 210, 170));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 100, 210, 170));
 
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
         jButton1.setText("X");
@@ -153,7 +153,7 @@ public class BullpeleaF extends javax.swing.JFrame {
         getContentPane().add(txtnombref, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 120, 90, 30));
 
         jblas.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        getContentPane().add(jblas, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 50, 160, 30));
+        getContentPane().add(jblas, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 60, 160, 30));
 
         jmostrar.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         getContentPane().add(jmostrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 120, 60, 30));

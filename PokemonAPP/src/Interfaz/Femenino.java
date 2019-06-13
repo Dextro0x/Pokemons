@@ -8,6 +8,7 @@ package Interfaz;
 import Interfaz.pokemonsele.BullbasaurF;
 import Interfaz.pokemonsele.CharmanderF;
 import Interfaz.pokemonsele.WartortleF;
+import java.applet.AudioClip;
 import pelea.BullpeleaF;
 
 /**
@@ -124,6 +125,10 @@ public class Femenino extends javax.swing.JFrame {
         BullbasaurF bf = new BullbasaurF();
         bf.setVisible(true);
         this.setVisible(false);
+        AudioClip sound;
+        sound = java.applet.Applet.newAudioClip(getClass().getResource("/CabuImagen/sonidobu.wav"));
+        sound.play();
+        
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed

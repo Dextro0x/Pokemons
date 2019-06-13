@@ -27,6 +27,8 @@ public class CharpeleaF extends javax.swing.JFrame {
         this.setLocationRelativeTo(null);
         PokemonBatalla po = new PokemonBatalla();
         nomen.setText(po.nombre);
+        jmostrar.setText(mipok.Estado());
+        jblas.setText(rival.Estado());
         
     }
 
@@ -54,7 +56,8 @@ public class CharpeleaF extends javax.swing.JFrame {
         jScrollPane2 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
         jchar = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
+        jblas = new javax.swing.JLabel();
+        jmostrar = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -128,8 +131,11 @@ public class CharpeleaF extends javax.swing.JFrame {
         jchar.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         getContentPane().add(jchar, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 110, 100, 30));
 
-        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 40, 140, 30));
+        jblas.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        getContentPane().add(jblas, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 40, 140, 30));
+
+        jmostrar.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        getContentPane().add(jmostrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 110, 60, 30));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fondo de batalla.jpg"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 730, 600));
@@ -207,11 +213,12 @@ public class CharpeleaF extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JLabel jblas;
     public javax.swing.JLabel jchar;
+    private javax.swing.JLabel jmostrar;
     private javax.swing.JLabel nomen;
     // End of variables declaration//GEN-END:variables
 }

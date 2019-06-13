@@ -53,8 +53,8 @@ public class BullpeleaF extends javax.swing.JFrame {
         jButton8 = new javax.swing.JButton();
         jButton9 = new javax.swing.JButton();
         txtnombref = new javax.swing.JLabel();
-        jmostrar = new javax.swing.JLabel();
         jblas = new javax.swing.JLabel();
+        jmostrar = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
 
@@ -130,13 +130,13 @@ public class BullpeleaF extends javax.swing.JFrame {
         getContentPane().add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 310, 30, 30));
 
         txtnombref.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        getContentPane().add(txtnombref, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 120, 90, 30));
-
-        jmostrar.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        getContentPane().add(jmostrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 120, 60, 30));
+        getContentPane().add(txtnombref, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 120, 90, 30));
 
         jblas.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         getContentPane().add(jblas, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 40, 160, 30));
+
+        jmostrar.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        getContentPane().add(jmostrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 120, 60, 30));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fondo de batalla.jpg"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 740, 590));

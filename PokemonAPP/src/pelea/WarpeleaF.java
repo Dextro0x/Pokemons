@@ -18,7 +18,7 @@ public class WarpeleaF extends javax.swing.JFrame {
     
     pokemon mipok = new pokemon("Wartortle");
     
-    pokemon rival = new pokemon("Sceptile");
+    Contrincante rival = new Contrincante("Sceptile");
 
     /**
      * Creates new form Bullpelea
@@ -28,6 +28,8 @@ public class WarpeleaF extends javax.swing.JFrame {
         this.setLocationRelativeTo(null);
         PokemonBatalla po = new PokemonBatalla();
         nomen.setText(po.nombre);
+        jmostrar.setText(mipok.Estado());
+        jblas.setText(rival.Estado());
     }
 
     /**
@@ -54,6 +56,8 @@ public class WarpeleaF extends javax.swing.JFrame {
         jScrollPane2 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
         jLabel6 = new javax.swing.JLabel();
+        jmostrar = new javax.swing.JLabel();
+        jblas = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -141,6 +145,12 @@ public class WarpeleaF extends javax.swing.JFrame {
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 160, 80, 20));
+
+        jmostrar.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        getContentPane().add(jmostrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 160, 60, 20));
+
+        jblas.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        getContentPane().add(jblas, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 40, 160, 30));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fondo de batalla.jpg"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 720, 600));
@@ -261,6 +271,8 @@ public class WarpeleaF extends javax.swing.JFrame {
     public javax.swing.JLabel jLabel6;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JLabel jblas;
+    private javax.swing.JLabel jmostrar;
     private javax.swing.JLabel nomen;
     // End of variables declaration//GEN-END:variables
 }

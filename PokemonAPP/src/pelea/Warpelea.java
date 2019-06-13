@@ -15,7 +15,7 @@ import pokemonapp.pokemon;
  * @author ASUS
  */
 public class Warpelea extends javax.swing.JFrame {
-    pokemon mipok = new pokemon("Wartortre");
+    pokemon mipok = new pokemon("Wartortle");
     Contrincante rival = new Contrincante("Sceptile");
     
 
@@ -27,6 +27,8 @@ public class Warpelea extends javax.swing.JFrame {
         this.setLocationRelativeTo(null);
         PokemonBatalla po = new PokemonBatalla();
         nomen.setText(po.nombre);
+        jmostrar.setText(mipok.Estado());
+        jblas.setText(rival.Estado());
     }
 
     /**
@@ -53,7 +55,8 @@ public class Warpelea extends javax.swing.JFrame {
         jScrollPane2 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
         jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
+        jblas = new javax.swing.JLabel();
+        jmostrar = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -143,8 +146,11 @@ public class Warpelea extends javax.swing.JFrame {
         jLabel6.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 100, 80, 30));
 
-        jLabel7.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 20, 160, 30));
+        jblas.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        getContentPane().add(jblas, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 20, 160, 30));
+
+        jmostrar.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        getContentPane().add(jmostrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 100, 60, 30));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fondo de batalla.jpg"))); // NOI18N
@@ -267,9 +273,10 @@ public class Warpelea extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     public javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JLabel jblas;
+    private javax.swing.JLabel jmostrar;
     private javax.swing.JLabel nomen;
     // End of variables declaration//GEN-END:variables
 }

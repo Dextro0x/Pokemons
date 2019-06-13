@@ -7,21 +7,24 @@ package pelea;
 
 import Interfaz.PokemonBatalla;
 import Interfaz.pokemonsele.Charmander;
+import pokemonapp.Contrincante;
+import pokemonapp.pokemon;
 
 /**
  *
  * @author ASUS
  */
 public class Charpelea extends javax.swing.JFrame {
-
-    /**
-     * Creates new form Bullpelea
-     */
+    pokemon mipok = new pokemon("Charmeleon");
+    
+    Contrincante rival = new Contrincante("Blastoise");
     public Charpelea() {
         initComponents();
         this.setLocationRelativeTo(null);
         PokemonBatalla po = new PokemonBatalla();
         nomen.setText(po.nombre);
+        jmostrar.setText(mipok.Estado());
+        jblas.setText(rival.Estado());
     }
 
     /**
@@ -48,6 +51,8 @@ public class Charpelea extends javax.swing.JFrame {
         jButton8 = new javax.swing.JButton();
         jButton9 = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
+        jmostrar = new javax.swing.JLabel();
+        jblas = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -112,7 +117,13 @@ public class Charpelea extends javax.swing.JFrame {
         getContentPane().add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 280, 30, 30));
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 80, 100, 30));
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 90, 90, 20));
+
+        jmostrar.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        getContentPane().add(jmostrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 90, 60, 20));
+
+        jblas.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        getContentPane().add(jblas, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 40, 160, 30));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fondo de batalla.jpg"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 710, 570));
@@ -191,6 +202,8 @@ public class Charpelea extends javax.swing.JFrame {
     public javax.swing.JLabel jLabel6;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextPane jTextPane1;
+    private javax.swing.JLabel jblas;
+    private javax.swing.JLabel jmostrar;
     private javax.swing.JLabel nomen;
     // End of variables declaration//GEN-END:variables
 }

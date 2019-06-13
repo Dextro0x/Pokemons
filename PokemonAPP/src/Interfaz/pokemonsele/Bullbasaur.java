@@ -9,7 +9,7 @@ import Atxy2k.CustomTextField.RestrictedTextField;
 import Interfaz.masculino;
 import javax.swing.JOptionPane;
 import pelea.Bullpelea;
-import pokemonapp.Bullmote;
+import Cambiarmotes.Bullmote;
 
 /**
  *

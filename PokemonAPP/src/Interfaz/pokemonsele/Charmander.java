@@ -8,8 +8,8 @@ package Interfaz.pokemonsele;
 import Interfaz.masculino;
 import pelea.Bullpelea;
 import pelea.Charpelea;
-import pokemonapp.Bullmote;
-import pokemonapp.Charmote;
+import Cambiarmotes.Bullmote;
+import Cambiarmotes.Charmote;
 
 /**
  *

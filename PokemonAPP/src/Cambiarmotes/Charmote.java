@@ -3,24 +3,23 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pokemonapp;
+package Cambiarmotes;
 
 import Atxy2k.CustomTextField.RestrictedTextField;
 import Interfaz.pokemonsele.Bullbasaur;
 import pelea.Bullpelea;
 import pelea.Charpelea;
-import pelea.CharpeleaF;
 
 /**
  *
  * @author ASUS
  */
-public class CharmoteF extends javax.swing.JFrame {
+public class Charmote extends javax.swing.JFrame {
 
     /**
      * Creates new form Mote
      */
-    public CharmoteF() {
+    public Charmote() {
         initComponents();
         this.setLocationRelativeTo(null);
         RestrictedTextField r = new RestrictedTextField(txtmote);
@@ -74,12 +73,12 @@ public class CharmoteF extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        CharpeleaF cp = new CharpeleaF();
+        Charpelea cp = new Charpelea();
         if(!txtmote.getText().isEmpty()){
             cp.setVisible(true);
             this.setVisible(false);
             String nom = txtmote.getText();
-            cp.jchar.setText(nom);
+            cp.jLabel6.setText(nom);
             
             
         }
@@ -91,11 +90,11 @@ public class CharmoteF extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        CharpeleaF cp = new CharpeleaF();
+        Charpelea cp = new Charpelea();
         cp.setVisible(true);
         this.setVisible(false);
         String nom = "Charmeleon";
-        cp.jchar.setText(nom);
+        cp.jLabel6.setText(nom);
         
     }//GEN-LAST:event_jButton2ActionPerformed
 
@@ -116,18 +115,14 @@ public class CharmoteF extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(CharmoteF.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Charmote.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(CharmoteF.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Charmote.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(CharmoteF.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Charmote.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(CharmoteF.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Charmote.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -136,7 +131,7 @@ public class CharmoteF extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new CharmoteF().setVisible(true);
+                new Charmote().setVisible(true);
             }
         });
     }

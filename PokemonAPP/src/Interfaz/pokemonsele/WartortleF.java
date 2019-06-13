@@ -9,7 +9,7 @@ import Interfaz.Femenino;
 import Interfaz.masculino;
 import pelea.Warpelea;
 import pelea.WarpeleaF;
-import pokemonapp.WarmoteF;
+import Cambiarmotes.WarmoteF;
 
 /**
  *

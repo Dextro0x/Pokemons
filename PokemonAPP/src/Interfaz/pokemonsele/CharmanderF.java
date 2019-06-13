@@ -10,8 +10,8 @@ import Interfaz.masculino;
 import pelea.Bullpelea;
 import pelea.Charpelea;
 import pelea.CharpeleaF;
-import pokemonapp.Charmote;
-import pokemonapp.CharmoteF;
+import Cambiarmotes.Charmote;
+import Cambiarmotes.CharmoteF;
 
 /**
  *

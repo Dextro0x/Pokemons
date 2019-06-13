@@ -3,25 +3,22 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pokemonapp;
+package Cambiarmotes;
 
 import Atxy2k.CustomTextField.RestrictedTextField;
 import Interfaz.pokemonsele.Bullbasaur;
-import pelea.Bullpelea;
-import pelea.Charpelea;
-import pelea.Warpelea;
-import pelea.WarpeleaF;
+import pelea.BullpeleaF;
 
 /**
  *
  * @author ASUS
  */
-public class WarmoteF extends javax.swing.JFrame {
+public class BullmoteF extends javax.swing.JFrame {
 
     /**
      * Creates new form Mote
      */
-    public WarmoteF() {
+    public BullmoteF() {
         initComponents();
         this.setLocationRelativeTo(null);
         RestrictedTextField r = new RestrictedTextField(txtmote);
@@ -75,12 +72,12 @@ public class WarmoteF extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        WarpeleaF cp = new WarpeleaF();
+        BullpeleaF bf = new BullpeleaF();
         if(!txtmote.getText().isEmpty()){
-            cp.setVisible(true);
+            bf.setVisible(true);
             this.setVisible(false);
             String nom = txtmote.getText();
-            cp.jLabel6.setText(nom);         
+            bf.txtnombref.setText(nom);
             
         }
         
@@ -91,12 +88,11 @@ public class WarmoteF extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        WarpeleaF cp = new WarpeleaF();
-        cp.setVisible(true);
+        BullpeleaF bf = new BullpeleaF();
+        bf.setVisible(true);
         this.setVisible(false);
-        String nom = "Wartortle";
-        cp.jLabel6.setText(nom);
-        
+        String nom = "Bullbasaur";
+        bf.txtnombref.setText(nom);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
@@ -116,26 +112,14 @@ public class WarmoteF extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(WarmoteF.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(BullmoteF.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(WarmoteF.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(BullmoteF.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(WarmoteF.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(BullmoteF.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(WarmoteF.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(BullmoteF.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -144,7 +128,7 @@ public class WarmoteF extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new WarmoteF().setVisible(true);
+                new BullmoteF().setVisible(true);
             }
         });
     }

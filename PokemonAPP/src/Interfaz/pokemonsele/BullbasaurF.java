@@ -10,8 +10,8 @@ import Interfaz.Femenino;
 import Interfaz.masculino;
 import pelea.Bullpelea;
 import pelea.BullpeleaF;
-import pokemonapp.Bullmote;
-import pokemonapp.BullmoteF;
+import Cambiarmotes.Bullmote;
+import Cambiarmotes.BullmoteF;
 
 /**
  *

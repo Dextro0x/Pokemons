@@ -7,7 +7,7 @@ package Interfaz.pokemonsele;
 
 import Interfaz.masculino;
 
-import pokemonapp.Warmote;
+import Cambiarmotes.Warmote;
 
 /**
  *

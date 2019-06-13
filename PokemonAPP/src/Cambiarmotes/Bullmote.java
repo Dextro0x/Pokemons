@@ -24,6 +24,7 @@ public class Bullmote extends javax.swing.JFrame {
         RestrictedTextField r = new RestrictedTextField(txtmote);
         r.setLimit(10);
     }
+    public static String nom = "";
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -76,7 +77,7 @@ public class Bullmote extends javax.swing.JFrame {
         if(!txtmote.getText().isEmpty()){
             bp.setVisible(true);
             this.setVisible(false);
-            String nom = txtmote.getText();
+            nom = txtmote.getText();
             Bullpelea.txtnombre.setText(nom);
         }
         
@@ -90,7 +91,7 @@ public class Bullmote extends javax.swing.JFrame {
         Bullpelea bp = new Bullpelea();
         bp.setVisible(true);
         this.setVisible(false);
-        String nom = "Bullbasaur";
+        nom = "Bullbasaur";
         Bullpelea.txtnombre.setText(nom);
     }//GEN-LAST:event_jButton2ActionPerformed
 

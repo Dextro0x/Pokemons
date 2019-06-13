@@ -57,9 +57,18 @@ public class pokemon{
     }
     public String UsarHP(pokemon este){
         String hp = "";
-        int HP = this.vida + 15;
-        este.vida =  HP;
-        hp = este.nombre + " ha usado poción, su vida aumenta a " + HP;
+        int HP = este.vida + 15;
+        este.vida = HP;
+        if(este.vida >= 65){
+            este.vida = 65;
+            HP = HP - 15;
+        }
+        if(este.vida >= 65){
+            hp = este.nombre + " ha usado pocion, su vida es " + este.vida;
+        }
+        else{
+            hp = este.nombre + " ha usado pocion, su vida aumenta " + HP;
+        }
         return hp;
         
     }

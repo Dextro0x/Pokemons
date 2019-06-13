@@ -27,6 +27,7 @@ public class CharpeleaF extends javax.swing.JFrame {
         this.setLocationRelativeTo(null);
         PokemonBatalla po = new PokemonBatalla();
         nomen.setText(po.nombre);
+        
     }
 
     /**

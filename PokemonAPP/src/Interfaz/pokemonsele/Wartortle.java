@@ -6,8 +6,8 @@
 package Interfaz.pokemonsele;
 
 import Interfaz.masculino;
-import pelea.Charpelea;
-import pelea.Warpelea;
+
+import pokemonapp.Warmote;
 
 /**
  *
@@ -102,14 +102,14 @@ public class Wartortle extends javax.swing.JFrame {
         
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         masculino m = new masculino();
-        Warpelea cp = new Warpelea();
         if(btsi.isSelected()){
             m.setVisible(true);
             this.dispose();          
         }
         if(btno.isSelected()){
-            cp.setVisible(true);
-            this.dispose();
+            Warmote w = new Warmote();
+            w.setVisible(true);
+            this.setVisible(false);
             
         }
         

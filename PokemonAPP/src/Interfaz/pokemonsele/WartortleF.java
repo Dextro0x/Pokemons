@@ -9,6 +9,7 @@ import Interfaz.Femenino;
 import Interfaz.masculino;
 import pelea.Warpelea;
 import pelea.WarpeleaF;
+import pokemonapp.WarmoteF;
 
 /**
  *
@@ -102,14 +103,14 @@ public class WartortleF extends javax.swing.JFrame {
         
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         Femenino m = new Femenino();
-        WarpeleaF cp = new WarpeleaF();
         if(btsi.isSelected()){
             m.setVisible(true);
-            this.dispose();          
+            this.setVisible(false);
         }
         if(btno.isSelected()){
-            cp.setVisible(true);
-            this.dispose();
+            WarmoteF wf = new WarmoteF();
+            wf.setVisible(true);
+            this.setVisible(false);
             
         }
         

@@ -51,7 +51,7 @@ public class Wartortle extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel1.setText("Genial has elegido ha Charmeleon!!");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 26));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, -1, 26));
 
         jButton1.setText("X");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -113,7 +113,7 @@ public class Wartortle extends javax.swing.JFrame {
         if(btno.isSelected()){
             Warmote w = new Warmote();
             w.setVisible(true);
-            this.setVisible(false);
+            
             
         }
         

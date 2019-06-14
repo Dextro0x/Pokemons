@@ -29,7 +29,7 @@
     <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Imagenes/charmander.gif"/>
+          <Image iconType="3" name="/CabuImagen/charmander.gif"/>
         </Property>
       </Properties>
       <Constraints>
@@ -41,7 +41,7 @@
     <Component class="javax.swing.JLabel" name="jLabel4">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Imagenes/tumblr_mwsikdoRJX1scncwdo1_500 (1).gif"/>
+          <Image iconType="3" name="/CabuImagen/tumblr_mwsikdoRJX1scncwdo1_500 (1).gif"/>
         </Property>
       </Properties>
       <Constraints>
@@ -53,7 +53,7 @@
     <Component class="javax.swing.JLabel" name="jLabel5">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Imagenes/contrincante.gif"/>
+          <Image iconType="3" name="/CabuImagen/contrincante.gif"/>
         </Property>
       </Properties>
       <Constraints>
@@ -120,7 +120,7 @@
     <Component class="javax.swing.JLabel" name="jLabel7">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Imagenes/entrenadora (3).gif"/>
+          <Image iconType="3" name="/CabuImagen/entrenadora (3).gif"/>
         </Property>
       </Properties>
       <Constraints>
@@ -147,7 +147,7 @@
     <Component class="javax.swing.JButton" name="btpos1">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Imagenes/pocion (1) (1).gif"/>
+          <Image iconType="3" name="/CabuImagen/pocion (1) (1).gif"/>
         </Property>
       </Properties>
       <Events>
@@ -162,7 +162,7 @@
     <Component class="javax.swing.JButton" name="btpos2">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Imagenes/pocion (1) (1).gif"/>
+          <Image iconType="3" name="/CabuImagen/pocion (1) (1).gif"/>
         </Property>
       </Properties>
       <Events>
@@ -177,7 +177,7 @@
     <Component class="javax.swing.JButton" name="btpos3">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Imagenes/pocion (1) (1).gif"/>
+          <Image iconType="3" name="/CabuImagen/pocion (1) (1).gif"/>
         </Property>
       </Properties>
       <Events>
@@ -251,7 +251,7 @@
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Imagenes/fondo de batalla.jpg"/>
+          <Image iconType="3" name="/CabuImagen/fondo de batalla.jpg"/>
         </Property>
       </Properties>
       <Constraints>

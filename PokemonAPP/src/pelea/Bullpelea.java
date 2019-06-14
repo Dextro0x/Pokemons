@@ -5,6 +5,8 @@
  */
 package pelea;
 
+
+import static Cambiarmotes.Bullmote.nom;
 import Interfaz.PokemonBatalla;
 import Interfaz.pokemonsele.Bullbasaur;
 import pokemonapp.Contrincante;
@@ -16,7 +18,8 @@ import pokemonapp.pokemon;
  * @author ASUS
  */
 public class Bullpelea extends javax.swing.JFrame {
-    pokemon mipok = new pokemon("Bullbasaur");
+    pokemon mipok = new pokemon(nom);
+    
     
     Contrincante rival = new Contrincante("Moltres");
    
@@ -198,7 +201,7 @@ public class Bullpelea extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        
+        mipok.nombre = nom;
         String resultado = mipok.Atacar(rival);
         jTextArea1.append(resultado + "\n");
         int cont = 0;    

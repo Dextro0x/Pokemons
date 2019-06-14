@@ -5,6 +5,7 @@
  */
 package pelea;
 
+import static Cambiarmotes.Charmote.nomb;
 import Interfaz.PokemonBatalla;
 import Interfaz.pokemonsele.Charmander;
 import pokemonapp.Contrincante;
@@ -15,7 +16,7 @@ import pokemonapp.pokemon;
  * @author ASUS
  */
 public class Charpelea extends javax.swing.JFrame {
-    pokemon mipok = new pokemon("Charmeleon");
+    pokemon mipok = new pokemon(nomb);
     
     Contrincante rival = new Contrincante("Blastoise");
     public Charpelea() {
@@ -153,7 +154,7 @@ public class Charpelea extends javax.swing.JFrame {
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 90, 90, 20));
 
         jmostrar.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        getContentPane().add(jmostrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 90, 60, 20));
+        getContentPane().add(jmostrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 90, 60, 20));
 
         jblas.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         getContentPane().add(jblas, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 40, 160, 30));
@@ -189,6 +190,7 @@ public class Charpelea extends javax.swing.JFrame {
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         String resultado = mipok.Atacar(rival);
+        mipok.nombre = nomb;
         jTextArea1.append(resultado + "\n");
         int cont = 0;    
         int pos = (int)(Math.random()*100);

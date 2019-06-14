@@ -5,6 +5,7 @@
  */
 package pelea;
 
+import static Cambiarmotes.WarmoteF.nomw;
 import Interfaz.PokemonBatalla;
 import Interfaz.pokemonsele.WartortleF;
 import pokemonapp.Contrincante;
@@ -16,7 +17,7 @@ import pokemonapp.pokemon;
  */
 public class WarpeleaF extends javax.swing.JFrame {
     
-    pokemon mipok = new pokemon("Wartortle");
+    pokemon mipok = new pokemon(nomw);
     
     Contrincante rival = new Contrincante("Sceptile");
 
@@ -193,6 +194,7 @@ public class WarpeleaF extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         String resultado = mipok.Atacar(rival);
+        mipok.nombre = nomw;
         jTextArea1.append(resultado + "\n");
         int cont = 0;    
         int pos = (int)(Math.random()*100);

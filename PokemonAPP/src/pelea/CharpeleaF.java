@@ -5,6 +5,7 @@
  */
 package pelea;
 
+import static Cambiarmotes.CharmoteF.nomF;
 import Interfaz.PokemonBatalla;
 import Interfaz.pokemonsele.CharmanderF;
 import pokemonapp.Contrincante;
@@ -15,7 +16,7 @@ import pokemonapp.pokemon;
  * @author ASUS
  */
 public class CharpeleaF extends javax.swing.JFrame {
-    pokemon mipok = new pokemon("Charmeleon");
+    pokemon mipok = new pokemon(nomF);
     Contrincante rival = new Contrincante("Blastoise");
     
 
@@ -193,6 +194,7 @@ public class CharpeleaF extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         String resultado = mipok.Atacar(rival);
+        mipok.nombre = nomF;
         jTextArea1.append(resultado + "\n");
         int cont = 0;    
         int pos = (int)(Math.random()*100);

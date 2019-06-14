@@ -39,6 +39,7 @@ public class BullpeleaF extends javax.swing.JFrame {
            pocion1.setEnabled(false);
            jButton9.setEnabled(false);
            jButton8.setEnabled(false);
+           jButton4.setEnabled(false);
        }
        if(rival.vida == 0){
            jTextArea1.append(rival.nombre + " ha sido derrotado "
@@ -48,6 +49,7 @@ public class BullpeleaF extends javax.swing.JFrame {
            pocion1.setEnabled(false);
            jButton9.setEnabled(false);
            jButton8.setEnabled(false);
+           jButton4.setEnabled(false);
        }
     }
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents

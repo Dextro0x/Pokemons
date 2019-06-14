@@ -37,6 +37,7 @@ public class Charpelea extends javax.swing.JFrame {
            jButton7.setEnabled(false);
            jButton9.setEnabled(false);
            jButton8.setEnabled(false);
+           jButton3.setEnabled(false);
        }
        if(rival.vida == 0){
            jTextArea1.append(rival.nombre + " ha sido derrotado "
@@ -46,6 +47,7 @@ public class Charpelea extends javax.swing.JFrame {
            jButton7.setEnabled(false);
            jButton9.setEnabled(false);
            jButton8.setEnabled(false);
+           jButton3.setEnabled(false);
        }
     }
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents

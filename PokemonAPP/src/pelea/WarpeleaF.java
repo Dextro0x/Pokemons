@@ -42,6 +42,7 @@ public class WarpeleaF extends javax.swing.JFrame {
            btpos1.setEnabled(false);
            btpos2.setEnabled(false);
            btpos3.setEnabled(false);
+           jButton5.setEnabled(false);
        }
        if(rival.vida == 0){
            jTextArea1.append(rival.nombre + " ha sido derrotado "
@@ -51,6 +52,7 @@ public class WarpeleaF extends javax.swing.JFrame {
            btpos1.setEnabled(false);
            btpos2.setEnabled(false);
            btpos3.setEnabled(false);
+           jButton5.setEnabled(false);
        }
     }
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents

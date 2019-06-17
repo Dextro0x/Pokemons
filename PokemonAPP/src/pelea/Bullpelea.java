@@ -143,7 +143,7 @@ public class Bullpelea extends javax.swing.JFrame {
 
         nomen.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         nomen.setForeground(java.awt.Color.orange);
-        getContentPane().add(nomen, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 20, 90, 20));
+        getContentPane().add(nomen, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 20, 130, 20));
 
         pocion1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/CabuImagen/pocion (1) (1).gif"))); // NOI18N
         pocion1.addActionListener(new java.awt.event.ActionListener() {
@@ -176,7 +176,7 @@ public class Bullpelea extends javax.swing.JFrame {
         getContentPane().add(jblas, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 30, 150, 30));
 
         txtnombre.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        getContentPane().add(txtnombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 80, 90, 40));
+        getContentPane().add(txtnombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 80, 100, 40));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/CabuImagen/fondo de batalla.jpg"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 710, 540));

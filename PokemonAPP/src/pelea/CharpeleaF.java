@@ -129,7 +129,7 @@ public class CharpeleaF extends javax.swing.JFrame {
 
         nomen.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         nomen.setForeground(java.awt.Color.orange);
-        getContentPane().add(nomen, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 10, 100, 20));
+        getContentPane().add(nomen, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, 140, 20));
 
         btpos1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/CabuImagen/pocion (1) (1).gif"))); // NOI18N
         btpos1.addActionListener(new java.awt.event.ActionListener() {

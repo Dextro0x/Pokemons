@@ -129,7 +129,7 @@ public class WarpeleaF extends javax.swing.JFrame {
 
         nomen.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         nomen.setForeground(java.awt.Color.orange);
-        getContentPane().add(nomen, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 20, 100, 20));
+        getContentPane().add(nomen, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 20, 120, 20));
 
         btpos1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/CabuImagen/pocion (1) (1).gif"))); // NOI18N
         btpos1.addActionListener(new java.awt.event.ActionListener() {
@@ -163,10 +163,11 @@ public class WarpeleaF extends javax.swing.JFrame {
         getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 350, 680, 200));
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 160, 80, 20));
+        jLabel6.setText("1234567890");
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 160, 100, 20));
 
         jmostrar.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        getContentPane().add(jmostrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 160, 60, 20));
+        getContentPane().add(jmostrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 160, 60, 20));
 
         jblas.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         getContentPane().add(jblas, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 40, 160, 30));

@@ -124,7 +124,7 @@ public class Charpelea extends javax.swing.JFrame {
 
         nomen.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         nomen.setForeground(java.awt.Color.orange);
-        getContentPane().add(nomen, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, 100, 20));
+        getContentPane().add(nomen, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 120, 20));
 
         jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/CabuImagen/pocion (1) (1).gif"))); // NOI18N
         jButton7.addActionListener(new java.awt.event.ActionListener() {
@@ -151,7 +151,7 @@ public class Charpelea extends javax.swing.JFrame {
         getContentPane().add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 280, 30, 30));
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 90, 90, 20));
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 90, 100, 20));
 
         jmostrar.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         getContentPane().add(jmostrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 90, 60, 20));

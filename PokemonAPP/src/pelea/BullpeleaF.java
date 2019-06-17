@@ -161,11 +161,12 @@ public class BullpeleaF extends javax.swing.JFrame {
         jmostrar.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         getContentPane().add(jmostrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 120, 60, 30));
 
+        jTextArea1.setEditable(false);
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
         jScrollPane2.setViewportView(jTextArea1);
 
-        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 350, 720, 190));
+        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 350, 720, 200));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/CabuImagen/fondo de batalla.jpg"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 740, 590));

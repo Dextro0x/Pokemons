@@ -9,6 +9,7 @@ package pelea;
 import static Cambiarmotes.Bullmote.nom;
 import Interfaz.PokemonBatalla;
 import Interfaz.pokemonsele.Bullbasaur;
+import javax.swing.JOptionPane;
 import pokemonapp.Contrincante;
 import pokemonapp.pokemon;
 
@@ -194,6 +195,7 @@ public class Bullpelea extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+
         PokemonBatalla po = new PokemonBatalla();
         po.setVisible(true);
         this.dispose();

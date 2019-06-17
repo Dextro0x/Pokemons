@@ -155,6 +155,7 @@ public class Warpelea extends javax.swing.JFrame {
         });
         getContentPane().add(btpos3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 260, 30, 30));
 
+        jTextArea1.setEditable(false);
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
         jScrollPane2.setViewportView(jTextArea1);

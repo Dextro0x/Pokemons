@@ -159,6 +159,7 @@ public class Charpelea extends javax.swing.JFrame {
         jblas.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         getContentPane().add(jblas, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 40, 160, 30));
 
+        jTextArea1.setEditable(false);
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
         jScrollPane2.setViewportView(jTextArea1);
